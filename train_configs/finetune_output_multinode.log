@@ -1,0 +1,1088 @@
+[2024-10-16 03:03:57,608] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-10-16 03:03:57,609] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.4
+[93m [WARNING] [0m using untested triton version (3.0.0), only 1.0.0 is known to be compatible
+10/16/2024 03:04:17 - INFO - llamafactory.cli - Initializing distributed tasks at: ip-10-1-25-31:33589
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.4
+[93m [WARNING] [0m using untested triton version (3.0.0), only 1.0.0 is known to be compatible
+10/16/2024 03:04:17 - INFO - llamafactory.cli - Initializing distributed tasks at: ip-10-1-25-31:33589
+[2024-10-16 03:05:01,153] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2024-10-16 03:05:01,155] [INFO] [real_accelerator.py:203:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io requires the dev libaio .so object and headers but these were not found.
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m async_io: please install the libaio-dev package with apt
+[93m [WARNING] [0m If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+[93m [WARNING] [0m Please specify the CUTLASS repo directory as environment variable $CUTLASS_PATH
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.4
+[93m [WARNING] [0m using untested triton version (3.0.0), only 1.0.0 is known to be compatible
+[93m [WARNING] [0m sparse_attn requires a torch version >= 1.5 and < 2.0 but detected 2.4
+[93m [WARNING] [0m using untested triton version (3.0.0), only 1.0.0 is known to be compatible
+/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:49: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(ctx, input, weight, bias=None):
+/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/deepspeed/runtime/zero/linear.py:67: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(ctx, grad_output):
+[2024-10-16 03:05:14,606] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-10-16 03:05:14,608] [INFO] [comm.py:637:init_distributed] cdb=None
+[2024-10-16 03:05:14,608] [INFO] [comm.py:668:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+10/16/2024 03:05:14 - WARNING - llamafactory.hparams.parser - We recommend enable `upcast_layernorm` in quantized training.
+10/16/2024 03:05:14 - WARNING - llamafactory.hparams.parser - We recommend enable `upcast_layernorm` in quantized training.
+10/16/2024 03:05:14 - WARNING - llamafactory.hparams.parser - `ddp_find_unused_parameters` needs to be set as False for LoRA in DDP training.
+10/16/2024 03:05:14 - WARNING - llamafactory.hparams.parser - `ddp_find_unused_parameters` needs to be set as False for LoRA in DDP training.
+10/16/2024 03:05:14 - INFO - llamafactory.hparams.parser - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+10/16/2024 03:05:14 - INFO - llamafactory.hparams.parser - Process rank: 0, device: cuda:0, n_gpu: 1, distributed training: True, compute dtype: torch.bfloat16
+[INFO|configuration_utils.py:672] 2024-10-16 03:05:15,088 >> loading configuration file config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/config.json
+[INFO|configuration_utils.py:672] 2024-10-16 03:05:15,088 >> loading configuration file config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/config.json
+[WARNING|modeling_rope_utils.py:379] 2024-10-16 03:05:15,102 >> Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+[WARNING|modeling_rope_utils.py:379] 2024-10-16 03:05:15,102 >> Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+[INFO|configuration_utils.py:739] 2024-10-16 03:05:15,103 >> Model config Qwen2VLConfig {
+  "_name_or_path": "Qwen/Qwen2-VL-7B-Instruct",
+  "architectures": [
+    "Qwen2VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 28,
+  "model_type": "qwen2_vl",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.45.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "in_chans": 3,
+[INFO|configuration_utils.py:739] 2024-10-16 03:05:15,103 >> Model config Qwen2VLConfig {
+  "_name_or_path": "Qwen/Qwen2-VL-7B-Instruct",
+  "architectures": [
+    "Qwen2VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 28,
+  "model_type": "qwen2_vl",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.45.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "in_chans": 3,
+    "model_type": "qwen2_vl",
+    "spatial_patch_size": 14
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 152064
+}
+
+    "model_type": "qwen2_vl",
+    "spatial_patch_size": 14
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 152064
+}
+
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file vocab.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/vocab.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file merges.txt from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/merges.txt
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file tokenizer.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/tokenizer.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file vocab.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/vocab.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file tokenizer_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file merges.txt from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/merges.txt
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file tokenizer.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/tokenizer.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:15,243 >> loading file tokenizer_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2478] 2024-10-16 03:05:15,657 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|tokenization_utils_base.py:2478] 2024-10-16 03:05:15,661 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|image_processing_base.py:375] 2024-10-16 03:05:15,944 >> loading configuration file preprocessor_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/preprocessor_config.json
+[INFO|image_processing_base.py:375] 2024-10-16 03:05:15,966 >> loading configuration file preprocessor_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/preprocessor_config.json
+[INFO|image_processing_base.py:375] 2024-10-16 03:05:16,057 >> loading configuration file preprocessor_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/preprocessor_config.json
+[INFO|image_processing_base.py:429] 2024-10-16 03:05:16,057 >> Image processor Qwen2VLImageProcessor {
+  "do_convert_rgb": true,
+  "do_normalize": true,
+  "do_rescale": true,
+  "do_resize": true,
+  "image_mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+  ],
+  "image_processor_type": "Qwen2VLImageProcessor",
+  "image_std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+  ],
+  "max_pixels": 12845056,
+  "merge_size": 2,
+  "min_pixels": 3136,
+  "patch_size": 14,
+  "processor_class": "Qwen2VLProcessor",
+  "resample": 3,
+  "rescale_factor": 0.00392156862745098,
+  "size": {
+    "max_pixels": 12845056,
+    "min_pixels": 3136
+  },
+  "temporal_patch_size": 2
+}
+
+[INFO|image_processing_base.py:375] 2024-10-16 03:05:16,069 >> loading configuration file preprocessor_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/preprocessor_config.json
+[INFO|image_processing_base.py:429] 2024-10-16 03:05:16,069 >> Image processor Qwen2VLImageProcessor {
+  "do_convert_rgb": true,
+  "do_normalize": true,
+  "do_rescale": true,
+  "do_resize": true,
+  "image_mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+  ],
+  "image_processor_type": "Qwen2VLImageProcessor",
+  "image_std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+  ],
+  "max_pixels": 12845056,
+  "merge_size": 2,
+  "min_pixels": 3136,
+  "patch_size": 14,
+  "processor_class": "Qwen2VLProcessor",
+  "resample": 3,
+  "rescale_factor": 0.00392156862745098,
+  "size": {
+    "max_pixels": 12845056,
+    "min_pixels": 3136
+  },
+  "temporal_patch_size": 2
+}
+
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,154 >> loading file vocab.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/vocab.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,154 >> loading file merges.txt from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/merges.txt
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,154 >> loading file tokenizer.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/tokenizer.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,154 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,154 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,154 >> loading file tokenizer_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,178 >> loading file vocab.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/vocab.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,178 >> loading file merges.txt from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/merges.txt
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,178 >> loading file tokenizer.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/tokenizer.json
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,178 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,178 >> loading file special_tokens_map.json from cache at None
+[INFO|tokenization_utils_base.py:2214] 2024-10-16 03:05:16,178 >> loading file tokenizer_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2478] 2024-10-16 03:05:16,448 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|tokenization_utils_base.py:2478] 2024-10-16 03:05:16,470 >> Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+[INFO|processing_utils.py:744] 2024-10-16 03:05:17,163 >> Processor Qwen2VLProcessor:
+- image_processor: Qwen2VLImageProcessor {
+  "do_convert_rgb": true,
+  "do_normalize": true,
+  "do_rescale": true,
+  "do_resize": true,
+  "image_mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+  ],
+  "image_processor_type": "Qwen2VLImageProcessor",
+  "image_std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+  ],
+  "max_pixels": 12845056,
+  "merge_size": 2,
+  "min_pixels": 3136,
+  "patch_size": 14,
+  "processor_class": "Qwen2VLProcessor",
+  "resample": 3,
+  "rescale_factor": 0.00392156862745098,
+  "size": {
+    "max_pixels": 12845056,
+    "min_pixels": 3136
+  },
+  "temporal_patch_size": 2
+}
+
+- tokenizer: Qwen2TokenizerFast(name_or_path='Qwen/Qwen2-VL-7B-Instruct', vocab_size=151643, model_max_length=32768, is_fast=True, padding_side='left', truncation_side='right', special_tokens={'eos_token': '<|im_end|>', 'pad_token': '<|endoftext|>', 'additional_special_tokens': ['<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|object_ref_end|>', '<|box_start|>', '<|box_end|>', '<|quad_start|>', '<|quad_end|>', '<|vision_start|>', '<|vision_end|>', '<|vision_pad|>', '<|image_pad|>', '<|video_pad|>']}, clean_up_tokenization_spaces=False),  added_tokens_decoder={
+	151643: AddedToken("<|endoftext|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151644: AddedToken("<|im_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151645: AddedToken("<|im_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151646: AddedToken("<|object_ref_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151647: AddedToken("<|object_ref_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151648: AddedToken("<|box_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151649: AddedToken("<|box_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151650: AddedToken("<|quad_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151651: AddedToken("<|quad_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151652: AddedToken("<|vision_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151653: AddedToken("<|vision_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151654: AddedToken("<|vision_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151655: AddedToken("<|image_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151656: AddedToken("<|video_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+}
+
+{
+  "processor_class": "Qwen2VLProcessor"
+}
+
+10/16/2024 03:05:17 - INFO - llamafactory.data.template - Replace eos token: <|im_end|>
+10/16/2024 03:05:17 - INFO - llamafactory.data.loader - Loading dataset ./pubtabnet/pubtabnet.json...
+[INFO|processing_utils.py:744] 2024-10-16 03:05:17,286 >> Processor Qwen2VLProcessor:
+- image_processor: Qwen2VLImageProcessor {
+  "do_convert_rgb": true,
+  "do_normalize": true,
+  "do_rescale": true,
+  "do_resize": true,
+  "image_mean": [
+    0.48145466,
+    0.4578275,
+    0.40821073
+  ],
+  "image_processor_type": "Qwen2VLImageProcessor",
+  "image_std": [
+    0.26862954,
+    0.26130258,
+    0.27577711
+  ],
+  "max_pixels": 12845056,
+  "merge_size": 2,
+  "min_pixels": 3136,
+  "patch_size": 14,
+  "processor_class": "Qwen2VLProcessor",
+  "resample": 3,
+  "rescale_factor": 0.00392156862745098,
+  "size": {
+    "max_pixels": 12845056,
+    "min_pixels": 3136
+  },
+  "temporal_patch_size": 2
+}
+
+- tokenizer: Qwen2TokenizerFast(name_or_path='Qwen/Qwen2-VL-7B-Instruct', vocab_size=151643, model_max_length=32768, is_fast=True, padding_side='left', truncation_side='right', special_tokens={'eos_token': '<|im_end|>', 'pad_token': '<|endoftext|>', 'additional_special_tokens': ['<|im_start|>', '<|im_end|>', '<|object_ref_start|>', '<|object_ref_end|>', '<|box_start|>', '<|box_end|>', '<|quad_start|>', '<|quad_end|>', '<|vision_start|>', '<|vision_end|>', '<|vision_pad|>', '<|image_pad|>', '<|video_pad|>']}, clean_up_tokenization_spaces=False),  added_tokens_decoder={
+	151643: AddedToken("<|endoftext|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151644: AddedToken("<|im_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151645: AddedToken("<|im_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151646: AddedToken("<|object_ref_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151647: AddedToken("<|object_ref_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151648: AddedToken("<|box_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151649: AddedToken("<|box_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151650: AddedToken("<|quad_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151651: AddedToken("<|quad_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151652: AddedToken("<|vision_start|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151653: AddedToken("<|vision_end|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151654: AddedToken("<|vision_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151655: AddedToken("<|image_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	151656: AddedToken("<|video_pad|>", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+}
+
+{
+  "processor_class": "Qwen2VLProcessor"
+}
+
+10/16/2024 03:05:17 - INFO - llamafactory.data.template - Replace eos token: <|im_end|>
+10/16/2024 03:05:17 - INFO - llamafactory.data.loader - Loading dataset ./pubtabnet/pubtabnet.json...
+Converting format of dataset (num_proc=16):   0%|          | 0/4000 [00:00<?, ? examples/s]Converting format of dataset (num_proc=16):   2%|▏         | 74/4000 [00:00<00:07, 559.26 examples/s]Converting format of dataset (num_proc=16):  79%|███████▉  | 3170/4000 [00:00<00:00, 16140.81 examples/s]Converting format of dataset (num_proc=16): 100%|██████████| 4000/4000 [00:00<00:00, 10671.66 examples/s]
+Converting format of dataset (num_proc=16):   0%|          | 0/4000 [00:00<?, ? examples/s]Converting format of dataset (num_proc=16):   2%|▏         | 91/4000 [00:00<00:04, 785.58 examples/s]Converting format of dataset (num_proc=16):  78%|███████▊  | 3107/4000 [00:00<00:00, 16660.95 examples/s]Converting format of dataset (num_proc=16): 100%|██████████| 4000/4000 [00:00<00:00, 9716.48 examples/s] 
+Running tokenizer on dataset (num_proc=16):   0%|          | 0/4000 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=16):   6%|▋         | 250/4000 [00:11<02:55, 21.42 examples/s]Running tokenizer on dataset (num_proc=16):  25%|██▌       | 1000/4000 [00:11<00:27, 109.75 examples/s]Running tokenizer on dataset (num_proc=16):  38%|███▊      | 1500/4000 [00:12<00:14, 178.32 examples/s]Running tokenizer on dataset (num_proc=16):  44%|████▍     | 1750/4000 [00:12<00:10, 211.18 examples/s]Running tokenizer on dataset (num_proc=16):  56%|█████▋    | 2250/4000 [00:13<00:05, 338.75 examples/s]Running tokenizer on dataset (num_proc=16):  69%|██████▉   | 2750/4000 [00:13<00:02, 489.93 examples/s]Running tokenizer on dataset (num_proc=16):  75%|███████▌  | 3000/4000 [00:13<00:01, 518.60 examples/s]Running tokenizer on dataset (num_proc=16):  88%|████████▊ | 3500/4000 [00:13<00:00, 711.67 examples/s]Running tokenizRunning tokenizer on dataset (num_proc=16):   0%|          | 0/4000 [00:00<?, ? examples/s]Running tokenizer on dataset (num_proc=16):   6%|▋         | 250/4000 [00:11<02:54, 21.55 examples/s]Running tokenizer on dataset (num_proc=16):  25%|██▌       | 1000/4000 [00:12<00:28, 106.96 examples/s]Running tokenizer on dataset (num_proc=16):  31%|███▏      | 1250/4000 [00:12<00:19, 142.14 examples/s]Running tokenizer on dataset (num_proc=16):  38%|███▊      | 1500/4000 [00:12<00:12, 193.26 examples/s]Running tokenizer on dataset (num_proc=16):  44%|████▍     | 1750/4000 [00:13<00:09, 229.48 examples/s]Running tokenizer on dataset (num_proc=16):  62%|██████▎   | 2500/4000 [00:13<00:03, 467.44 examples/s]Running tokenizer on dataset (num_proc=16):  75%|███████▌  | 3000/4000 [00:13<00:01, 594.00 examples/s]Running tokenizer on dataset (num_proc=16):  81%|████████▏ | 3250/4000 [00:14<00:01, 616.88 examples/s]Running tokenizer oer on dataset (num_proc=16):  94%|█████████▍| 3750/4000 [00:14<00:00, 756.69 examples/s]Running tokenizer on dataset (num_proc=16): 100%|██████████| 4000/4000 [00:14<00:00, 277.58 examples/s]
+n dataset (num_proc=16):  88%|████████▊ | 3500/4000 [00:14<00:00, 723.34 examples/s]Running tokenizer on dataset (num_proc=16): 100%|██████████| 4000/4000 [00:14<00:00, 1046.32 examples/s]Running tokenizer on dataset (num_proc=16): 100%|██████████| 4000/4000 [00:14<00:00, 276.12 examples/s] 
+training example:
+input_ids:
+[151644, 8948, 198, 2610, 525, 264, 10950, 17847, 13, 151645, 198, 151644, 872, 198, 151652, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151653, 5501, 6923, 13382, 9308, 2038, 429, 10868, 279, 1965, 5944, 6839, 304, 1946, 2168, 11, 2670, 894, 26001, 7761, 13, 151645, 198, 151644, 77091, 198, 13745, 397, 15527, 397, 20993, 4034, 428, 4997, 3341, 1, 5601, 428, 16753, 1, 2374, 428, 16, 15, 15, 39276, 11275, 397, 6868, 1784, 65, 53300, 258, 5298, 5733, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 29, 8065, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 488, 47488, 10911, 6161, 32, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 488, 47488, 10911, 580, 16, 522, 65, 1472, 1296, 397, 522, 376, 397, 11275, 397, 6868, 50700, 2810, 522, 1296, 397, 6868, 29, 16, 24, 13, 21, 20287, 220, 15, 13, 22, 20, 522, 1296, 397, 6868, 29, 17, 21, 13, 17, 20287, 220, 15, 13, 23, 21, 30945, 1296, 397, 6868, 29, 18, 16, 13, 18, 20287, 220, 15, 13, 23, 23, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 17, 16, 13, 21, 20287, 220, 15, 13, 24, 522, 1296, 397, 522, 376, 397, 11275, 397, 6868, 53300, 6, 369, 472, 27, 12776, 29, 79265, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 20, 15, 20287, 220, 15, 13, 15, 17, 522, 1296, 397, 6868, 29, 15, 13, 16, 16, 18, 20287, 220, 15, 13, 15, 20, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 15, 20, 20287, 220, 15, 13, 15, 22, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 18, 22, 20287, 220, 15, 13, 15, 17, 18, 522, 1296, 397, 522, 376, 397, 11275, 397, 6868, 52130, 27, 1966, 29, 676, 522, 1966, 1472, 1296, 397, 6868, 29, 17, 13, 16, 24, 522, 1296, 397, 6868, 29, 17, 13, 16, 21, 522, 1296, 397, 6868, 29, 17, 13, 15, 18, 522, 1296, 397, 6868, 29, 17, 13, 17, 18, 522, 1296, 397, 522, 376, 397, 522, 2005, 397, 522, 2599, 397, 522, 1551, 29, 151645]
+inputs:
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>Please generate accurate HTML code that represents the table structure shown in input image, including any merged cells.<|im_end|>
+<|im_start|>assistant
+<html>
+<body>
+<table frame="hsides" rules="groups" width="100%">
+<tr>
+<td><b>Kinetic parameter</b></td>
+<td><b>ND</b></td>
+<td><b>D</b></td>
+<td><b>D + dn-RhoA</b></td>
+<td><b>D + dn-Rac1</b></td>
+</tr>
+<tr>
+<td>Vmax</td>
+<td>19.6 ± 0.75</td>
+<td>26.2 ± 0.86*</td>
+<td>31.3 ± 0.88<sup>†</sup></td>
+<td>21.6 ± 0.9</td>
+</tr>
+<tr>
+<td>K' for H<sup>+</sup></td>
+<td>0.150 ± 0.02</td>
+<td>0.113 ± 0.05<sup>†</sup></td>
+<td>0.105 ± 0.07<sup>†</sup></td>
+<td>0.137 ± 0.023</td>
+</tr>
+<tr>
+<td>n<sub>app</sub></td>
+<td>2.19</td>
+<td>2.16</td>
+<td>2.03</td>
+<td>2.23</td>
+</tr>
+</table>
+</body>
+</html><|im_end|>
+label_ids:
+[-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 13745, 397, 15527, 397, 20993, 4034, 428, 4997, 3341, 1, 5601, 428, 16753, 1, 2374, 428, 16, 15, 15, 39276, 11275, 397, 6868, 1784, 65, 53300, 258, 5298, 5733, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 29, 8065, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 488, 47488, 10911, 6161, 32, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 488, 47488, 10911, 580, 16, 522, 65, 1472, 1296, 397, 522, 376, 397, 11275, 397, 6868, 50700, 2810, 522, 1296, 397, 6868, 29, 16, 24, 13, 21, 20287, 220, 15, 13, 22, 20, 522, 1296, 397, 6868, 29, 17, 21, 13, 17, 20287, 220, 15, 13, 23, 21, 30945, 1296, 397, 6868, 29, 18, 16, 13, 18, 20287, 220, 15, 13, 23, 23, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 17, 16, 13, 21, 20287, 220, 15, 13, 24, 522, 1296, 397, 522, 376, 397, 11275, 397, 6868, 53300, 6, 369, 472, 27, 12776, 29, 79265, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 20, 15, 20287, 220, 15, 13, 15, 17, 522, 1296, 397, 6868, 29, 15, 13, 16, 16, 18, 20287, 220, 15, 13, 15, 20, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 15, 20, 20287, 220, 15, 13, 15, 22, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 18, 22, 20287, 220, 15, 13, 15, 17, 18, 522, 1296, 397, 522, 376, 397, 11275, 397, 6868, 52130, 27, 1966, 29, 676, 522, 1966, 1472, 1296, 397, 6868, 29, 17, 13, 16, 24, 522, 1296, 397, 6868, 29, 17, 13, 16, 21, 522, 1296, 397, 6868, 29, 17, 13, 15, 18, 522, 1296, 397, 6868, 29, 17, 13, 17, 18, 522, 1296, 397, 522, 376, 397, 522, 2005, 397, 522, 2599, 397, 522, 1551, 29, 151645]
+labels:
+<html>
+<body>
+<table frame="hsides" rules="groups" width="100%">
+<tr>
+<td><b>Kinetic parameter</b></td>
+<td><b>ND</b></td>
+<td><b>D</b></td>
+<td><b>D + dn-RhoA</b></td>
+<td><b>D + dn-Rac1</b></td>
+</tr>
+<tr>
+<td>Vmax</td>
+<td>19.6 ± 0.75</td>
+<td>26.2 ± 0.86*</td>
+<td>31.3 ± 0.88<sup>†</sup></td>
+<td>21.6 ± 0.9</td>
+</tr>
+<tr>
+<td>K' for H<sup>+</sup></td>
+<td>0.150 ± 0.02</td>
+<td>0.113 ± 0.05<sup>†</sup></td>
+<td>0.105 ± 0.07<sup>†</sup></td>
+<td>0.137 ± 0.023</td>
+</tr>
+<tr>
+<td>n<sub>app</sub></td>
+<td>2.19</td>
+<td>2.16</td>
+<td>2.03</td>
+<td>2.23</td>
+</tr>
+</table>
+</body>
+</html><|im_end|>
+training example:
+input_ids:
+[151644, 8948, 198, 2610, 525, 264, 10950, 17847, 13, 151645, 198, 151644, 872, 198, 151652, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151655, 151653, 5501, 6923, 13382, 9308, 2038, 429, 10868, 279, 1965, 5944, 6839, 304, 1946, 2168, 11, 2670, 894, 26001, 7761, 13, 151645, 198, 151644, 77091, 198, 13745, 397, 15527, 397, 20993, 4034, 428, 4997, 3341, 1, 5601, 428, 16753, 1, 2374, 428, 16, 15, 15, 39276, 11275, 397, 6868, 1784, 65, 53300, 258, 5298, 5733, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 29, 8065, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 488, 47488, 10911, 6161, 32, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 488, 47488, 10911, 580, 16, 522, 65, 1472, 1296, 397, 522, 376, 397, 11275, 397, 6868, 50700, 2810, 522, 1296, 397, 6868, 29, 16, 24, 13, 21, 20287, 220, 15, 13, 22, 20, 522, 1296, 397, 6868, 29, 17, 21, 13, 17, 20287, 220, 15, 13, 23, 21, 30945, 1296, 397, 6868, 29, 18, 16, 13, 18, 20287, 220, 15, 13, 23, 23, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 17, 16, 13, 21, 20287, 220, 15, 13, 24, 522, 1296, 397, 522, 376, 397, 11275, 397, 6868, 53300, 6, 369, 472, 27, 12776, 29, 79265, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 20, 15, 20287, 220, 15, 13, 15, 17, 522, 1296, 397, 6868, 29, 15, 13, 16, 16, 18, 20287, 220, 15, 13, 15, 20, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 15, 20, 20287, 220, 15, 13, 15, 22, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 18, 22, 20287, 220, 15, 13, 15, 17, 18, 522, 1296, 397, 522, 376, 397, 11275, 397, 6868, 52130, 27, 1966, 29, 676, 522, 1966, 1472, 1296, 397, 6868, 29, 17, 13, 16, 24, 522, 1296, 397, 6868, 29, 17, 13, 16, 21, 522, 1296, 397, 6868, 29, 17, 13, 15, 18, 522, 1296, 397, 6868, 29, 17, 13, 17, 18, 522, 1296, 397, 522, 376, 397, 522, 2005, 397, 522, 2599, 397, 522, 1551, 29, 151645]
+inputs:
+<|im_start|>system
+You are a helpful assistant.<|im_end|>
+<|im_start|>user
+<|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|vision_end|>Please generate accurate HTML code that represents the table structure shown in input image, including any merged cells.<|im_end|>
+<|im_start|>assistant
+<html>
+<body>
+<table frame="hsides" rules="groups" width="100%">
+<tr>
+<td><b>Kinetic parameter</b></td>
+<td><b>ND</b></td>
+<td><b>D</b></td>
+<td><b>D + dn-RhoA</b></td>
+<td><b>D + dn-Rac1</b></td>
+</tr>
+<tr>
+<td>Vmax</td>
+<td>19.6 ± 0.75</td>
+<td>26.2 ± 0.86*</td>
+<td>31.3 ± 0.88<sup>†</sup></td>
+<td>21.6 ± 0.9</td>
+</tr>
+<tr>
+<td>K' for H<sup>+</sup></td>
+<td>0.150 ± 0.02</td>
+<td>0.113 ± 0.05<sup>†</sup></td>
+<td>0.105 ± 0.07<sup>†</sup></td>
+<td>0.137 ± 0.023</td>
+</tr>
+<tr>
+<td>n<sub>app</sub></td>
+<td>2.19</td>
+<td>2.16</td>
+<td>2.03</td>
+<td>2.23</td>
+</tr>
+</table>
+</body>
+</html><|im_end|>
+label_ids:
+[-100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, -100, 13745, 397, 15527, 397, 20993, 4034, 428, 4997, 3341, 1, 5601, 428, 16753, 1, 2374, 428, 16, 15, 15, 39276, 11275, 397, 6868, 1784, 65, 53300, 258, 5298, 5733, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 29, 8065, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 488, 47488, 10911, 6161, 32, 522, 65, 1472, 1296, 397, 6868, 1784, 65, 36495, 488, 47488, 10911, 580, 16, 522, 65, 1472, 1296, 397, 522, 376, 397, 11275, 397, 6868, 50700, 2810, 522, 1296, 397, 6868, 29, 16, 24, 13, 21, 20287, 220, 15, 13, 22, 20, 522, 1296, 397, 6868, 29, 17, 21, 13, 17, 20287, 220, 15, 13, 23, 21, 30945, 1296, 397, 6868, 29, 18, 16, 13, 18, 20287, 220, 15, 13, 23, 23, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 17, 16, 13, 21, 20287, 220, 15, 13, 24, 522, 1296, 397, 522, 376, 397, 11275, 397, 6868, 53300, 6, 369, 472, 27, 12776, 29, 79265, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 20, 15, 20287, 220, 15, 13, 15, 17, 522, 1296, 397, 6868, 29, 15, 13, 16, 16, 18, 20287, 220, 15, 13, 15, 20, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 15, 20, 20287, 220, 15, 13, 15, 22, 27, 12776, 29, 83262, 522, 12776, 1472, 1296, 397, 6868, 29, 15, 13, 16, 18, 22, 20287, 220, 15, 13, 15, 17, 18, 522, 1296, 397, 522, 376, 397, 11275, 397, 6868, 52130, 27, 1966, 29, 676, 522, 1966, 1472, 1296, 397, 6868, 29, 17, 13, 16, 24, 522, 1296, 397, 6868, 29, 17, 13, 16, 21, 522, 1296, 397, 6868, 29, 17, 13, 15, 18, 522, 1296, 397, 6868, 29, 17, 13, 17, 18, 522, 1296, 397, 522, 376, 397, 522, 2005, 397, 522, 2599, 397, 522, 1551, 29, 151645]
+labels:
+<html>
+<body>
+<table frame="hsides" rules="groups" width="100%">
+<tr>
+<td><b>Kinetic parameter</b></td>
+<td><b>ND</b></td>
+<td><b>D</b></td>
+<td><b>D + dn-RhoA</b></td>
+<td><b>D + dn-Rac1</b></td>
+</tr>
+<tr>
+<td>Vmax</td>
+<td>19.6 ± 0.75</td>
+<td>26.2 ± 0.86*</td>
+<td>31.3 ± 0.88<sup>†</sup></td>
+<td>21.6 ± 0.9</td>
+</tr>
+<tr>
+<td>K' for H<sup>+</sup></td>
+<td>0.150 ± 0.02</td>
+<td>0.113 ± 0.05<sup>†</sup></td>
+<td>0.105 ± 0.07<sup>†</sup></td>
+<td>0.137 ± 0.023</td>
+</tr>
+<tr>
+<td>n<sub>app</sub></td>
+<td>2.19</td>
+<td>2.16</td>
+<td>2.03</td>
+<td>2.23</td>
+</tr>
+</table>
+</body>
+</html><|im_end|>
+[INFO|configuration_utils.py:672] 2024-10-16 03:05:34,916 >> loading configuration file config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/config.json
+[WARNING|modeling_rope_utils.py:379] 2024-10-16 03:05:34,916 >> Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+[INFO|configuration_utils.py:739] 2024-10-16 03:05:34,918 >> Model config Qwen2VLConfig {
+  "_name_or_path": "Qwen/Qwen2-VL-7B-Instruct",
+  "architectures": [
+    "Qwen2VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 28,
+  "model_type": "qwen2_vl",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.45.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "in_chans": 3,
+    "model_type": "qwen2_vl",
+    "spatial_patch_size": 14
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 152064
+}
+
+[INFO|configuration_utils.py:672] 2024-10-16 03:05:34,919 >> loading configuration file config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/config.json
+[WARNING|modeling_rope_utils.py:379] 2024-10-16 03:05:34,919 >> Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+[INFO|configuration_utils.py:739] 2024-10-16 03:05:34,921 >> Model config Qwen2VLConfig {
+  "_name_or_path": "Qwen/Qwen2-VL-7B-Instruct",
+  "architectures": [
+    "Qwen2VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 28,
+  "model_type": "qwen2_vl",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.45.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "in_chans": 3,
+    "model_type": "qwen2_vl",
+    "spatial_patch_size": 14
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 152064
+}
+
+10/16/2024 03:05:34 - INFO - llamafactory.model.model_utils.quantization - Quantizing model to 4 bit with bitsandbytes.
+10/16/2024 03:05:34 - INFO - llamafactory.model.model_utils.quantization - Quantizing model to 4 bit with bitsandbytes.
+10/16/2024 03:05:35 - INFO - llamafactory.model.model_utils.liger_kernel - Liger kernel has been applied to the model.
+10/16/2024 03:05:35 - INFO - llamafactory.model.model_utils.liger_kernel - Liger kernel has been applied to the model.
+[INFO|modeling_utils.py:3726] 2024-10-16 03:05:36,917 >> loading weights file model.safetensors from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/model.safetensors.index.json
+[INFO|modeling_utils.py:3726] 2024-10-16 03:05:36,917 >> loading weights file model.safetensors from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/model.safetensors.index.json
+[INFO|modeling_utils.py:1622] 2024-10-16 03:05:36,958 >> Instantiating Qwen2VLForConditionalGeneration model under default dtype torch.bfloat16.
+[INFO|modeling_utils.py:1622] 2024-10-16 03:05:36,961 >> Instantiating Qwen2VLForConditionalGeneration model under default dtype torch.bfloat16.
+[INFO|configuration_utils.py:1099] 2024-10-16 03:05:36,971 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645
+}
+
+[INFO|configuration_utils.py:1099] 2024-10-16 03:05:36,971 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "eos_token_id": 151645
+}
+
+[WARNING|logging.py:328] 2024-10-16 03:05:36,974 >> You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+[WARNING|logging.py:328] 2024-10-16 03:05:36,974 >> You are attempting to use Flash Attention 2.0 without specifying a torch dtype. This might lead to unexpected behaviour
+[WARNING|logging.py:328] 2024-10-16 03:05:37,123 >> `Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+[WARNING|logging.py:328] 2024-10-16 03:05:37,123 >> `Qwen2VLRotaryEmbedding` can now be fully parameterized by passing the model config through the `config` argument. All other arguments will be removed in v4.46
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:07<00:28,  7.23s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:14<00:21,  7.32s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:21<00:14,  7.35s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:29<00:07,  7.55s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:31<00:00,  5.51s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:31<00:00,  6.35s/it]
+[INFO|modeling_utils.py:4568] 2024-10-16 03:06:09,884 >> All model checkpoint weights were used when initializing Qwen2VLForConditionalGeneration.
+
+[INFO|modeling_utils.py:4576] 2024-10-16 03:06:09,887 >> All the weights of Qwen2VLForConditionalGeneration were initialized from the model checkpoint at Qwen/Qwen2-VL-7B-Instruct.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Qwen2VLForConditionalGeneration for predictions without further training.
+[INFO|configuration_utils.py:1054] 2024-10-16 03:06:10,043 >> loading configuration file generation_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/generation_config.json
+[INFO|configuration_utils.py:1099] 2024-10-16 03:06:10,044 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "temperature": 0.01,
+  "top_k": 1,
+  "top_p": 0.001
+}
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:07<00:30,  7.64s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:14<00:21,  7.24s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:21<00:14,  7.31s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:29<00:07,  7.53s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:32<00:00,  5.59s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:32<00:00,  6.40s/it]
+[INFO|modeling_utils.py:4568] 2024-10-16 03:06:10,144 >> All model checkpoint weights were used when initializing Qwen2VLForConditionalGeneration.
+
+[INFO|modeling_utils.py:4576] 2024-10-16 03:06:10,146 >> All the weights of Qwen2VLForConditionalGeneration were initialized from the model checkpoint at Qwen/Qwen2-VL-7B-Instruct.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use Qwen2VLForConditionalGeneration for predictions without further training.
+[INFO|configuration_utils.py:1054] 2024-10-16 03:06:10,284 >> loading configuration file generation_config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/generation_config.json
+[INFO|configuration_utils.py:1099] 2024-10-16 03:06:10,284 >> Generate config GenerationConfig {
+  "bos_token_id": 151643,
+  "do_sample": true,
+  "eos_token_id": [
+    151645,
+    151643
+  ],
+  "pad_token_id": 151643,
+  "temperature": 0.01,
+  "top_k": 1,
+  "top_p": 0.001
+}
+
+10/16/2024 03:06:10 - INFO - llamafactory.model.model_utils.checkpointing - Gradient checkpointing enabled.
+10/16/2024 03:06:10 - INFO - llamafactory.model.model_utils.visual - Casting multimodal projector outputs in torch.bfloat16.
+10/16/2024 03:06:10 - INFO - llamafactory.model.model_utils.attention - Using FlashAttention-2 for faster training and inference.
+10/16/2024 03:06:10 - INFO - llamafactory.model.adapter - Upcasting trainable params to float32.
+10/16/2024 03:06:10 - INFO - llamafactory.model.adapter - Fine-tuning method: LoRA
+10/16/2024 03:06:10 - INFO - llamafactory.model.model_utils.misc - Found linear modules: v_proj,o_proj,q_proj,fc2,k_proj,proj,fc1,gate_proj,up_proj,down_proj,qkv
+10/16/2024 03:06:10 - INFO - llamafactory.model.model_utils.checkpointing - Gradient checkpointing enabled.
+10/16/2024 03:06:10 - INFO - llamafactory.model.model_utils.visual - Casting multimodal projector outputs in torch.bfloat16.
+10/16/2024 03:06:10 - INFO - llamafactory.model.model_utils.attention - Using FlashAttention-2 for faster training and inference.
+10/16/2024 03:06:10 - INFO - llamafactory.model.adapter - Upcasting trainable params to float32.
+10/16/2024 03:06:10 - INFO - llamafactory.model.adapter - Fine-tuning method: LoRA
+10/16/2024 03:06:10 - INFO - llamafactory.model.model_utils.misc - Found linear modules: proj,up_proj,v_proj,qkv,gate_proj,fc2,fc1,down_proj,o_proj,k_proj,q_proj
+10/16/2024 03:06:14 - INFO - llamafactory.model.loader - trainable params: 406,847,488 || all params: 8,698,223,104 || trainable%: 4.6774
+[INFO|trainer.py:667] 2024-10-16 03:06:14,092 >> Using auto half precision backend
+10/16/2024 03:06:14 - INFO - llamafactory.model.loader - trainable params: 406,847,488 || all params: 8,698,223,104 || trainable%: 4.6774
+[INFO|trainer.py:667] 2024-10-16 03:06:14,329 >> Using auto half precision backend
+10/16/2024 03:06:14 - WARNING - llamafactory.train.callbacks - Previous trainer log in this folder will be deleted.
+[2024-10-16 03:06:29,893] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed info: version=0.14.4, git-hash=unknown, git-branch=unknown
+[2024-10-16 03:06:30,520] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Flops Profiler Enabled: False
+[2024-10-16 03:06:30,530] [INFO] [logging.py:96:log_dist] [Rank 0] Using client Optimizer as basic optimizer
+[2024-10-16 03:06:30,530] [INFO] [logging.py:96:log_dist] [Rank 0] Removing param_group that has no 'params' in the basic Optimizer
+[2024-10-16 03:06:30,660] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Basic Optimizer = AdamW
+[2024-10-16 03:06:30,660] [INFO] [logging.py:96:log_dist] [Rank 0] Creating BF16 optimizer
+[2024-10-16 03:06:31,202] [INFO] [utils.py:781:see_memory_usage] begin bf16_optimizer
+[2024-10-16 03:06:31,210] [INFO] [utils.py:782:see_memory_usage] MA 6.35 GB         Max_MA 7.1 GB         CA 7.43 GB         Max_CA 7 GB 
+[2024-10-16 03:06:31,210] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 4.35 GB, percent = 14.0%
+[2024-10-16 03:06:31,424] [INFO] [utils.py:781:see_memory_usage] before initializing group 0
+[2024-10-16 03:06:31,425] [INFO] [utils.py:782:see_memory_usage] MA 6.35 GB         Max_MA 6.35 GB         CA 7.43 GB         Max_CA 7 GB 
+[2024-10-16 03:06:31,425] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 4.34 GB, percent = 14.0%
+[INFO|trainer.py:2243] 2024-10-16 03:06:35,685 >> ***** Running training *****
+[INFO|trainer.py:2244] 2024-10-16 03:06:35,686 >>   Num examples = 4,000
+[INFO|trainer.py:2245] 2024-10-16 03:06:35,686 >>   Num Epochs = 2
+[INFO|trainer.py:2246] 2024-10-16 03:06:35,686 >>   Instantaneous batch size per device = 1
+[INFO|trainer.py:2249] 2024-10-16 03:06:35,686 >>   Total train batch size (w. parallel, distributed & accumulation) = 16
+[INFO|trainer.py:2250] 2024-10-16 03:06:35,686 >>   Gradient Accumulation steps = 8
+[INFO|trainer.py:2251] 2024-10-16 03:06:35,686 >>   Total optimization steps = 500
+[INFO|trainer.py:2252] 2024-10-16 03:06:35,693 >>   Number of trainable parameters = 406,847,488
+[2024-10-16 03:06:35,840] [INFO] [utils.py:781:see_memory_usage] after initializing group 0
+[2024-10-16 03:06:35,841] [INFO] [utils.py:782:see_memory_usage] MA 8.59 GB         Max_MA 8.59 GB         CA 10.84 GB         Max_CA 11 GB 
+[2024-10-16 03:06:35,841] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 4.32 GB, percent = 13.9%
+[2024-10-16 03:06:36,012] [INFO] [utils.py:781:see_memory_usage] before initialize_optimizer
+[2024-10-16 03:06:36,013] [INFO] [utils.py:782:see_memory_usage] MA 8.59 GB         Max_MA 8.59 GB         CA 10.84 GB         Max_CA 11 GB 
+[2024-10-16 03:06:36,013] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 4.32 GB, percent = 13.9%
+[2024-10-16 03:06:36,188] [INFO] [utils.py:781:see_memory_usage] end initialize_optimizer
+[2024-10-16 03:06:36,188] [INFO] [utils.py:782:see_memory_usage] MA 8.59 GB         Max_MA 8.59 GB         CA 10.84 GB         Max_CA 11 GB 
+[2024-10-16 03:06:36,188] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 4.32 GB, percent = 13.9%
+[2024-10-16 03:06:36,372] [INFO] [utils.py:781:see_memory_usage] end bf16_optimizer
+[2024-10-16 03:06:36,373] [INFO] [utils.py:782:see_memory_usage] MA 8.59 GB         Max_MA 8.59 GB         CA 10.84 GB         Max_CA 11 GB 
+[2024-10-16 03:06:36,373] [INFO] [utils.py:789:see_memory_usage] CPU Virtual Memory:  used = 4.32 GB, percent = 13.9%
+[2024-10-16 03:06:36,373] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed Final Optimizer = BF16_Optimizer
+[2024-10-16 03:06:36,374] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed using client LR scheduler
+[2024-10-16 03:06:36,374] [INFO] [logging.py:96:log_dist] [Rank 0] DeepSpeed LR Scheduler = None
+[2024-10-16 03:06:36,374] [INFO] [logging.py:96:log_dist] [Rank 0] step=0, skipped=0, lr=[0.0], mom=[(0.9, 0.999)]
+[2024-10-16 03:06:36,380] [INFO] [config.py:997:print] DeepSpeedEngine configuration:
+[2024-10-16 03:06:36,381] [INFO] [config.py:1001:print]   activation_checkpointing_config  {
+    "partition_activations": false, 
+    "contiguous_memory_optimization": false, 
+    "cpu_checkpointing": false, 
+    "number_checkpoints": null, 
+    "synchronize_checkpoint_boundary": false, 
+    "profile": false
+}
+[2024-10-16 03:06:36,381] [INFO] [config.py:1001:print]   aio_config ................... {'block_size': 1048576, 'queue_depth': 8, 'thread_count': 1, 'single_submit': False, 'overlap_events': True}
+[2024-10-16 03:06:36,381] [INFO] [config.py:1001:print]   amp_enabled .................. False
+[2024-10-16 03:06:36,381] [INFO] [config.py:1001:print]   amp_params ................... False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   autotuning_config ............ {
+    "enabled": false, 
+    "start_step": null, 
+    "end_step": null, 
+    "metric_path": null, 
+    "arg_mappings": null, 
+    "metric": "throughput", 
+    "model_info": null, 
+    "results_dir": "autotuning_results", 
+    "exps_dir": "autotuning_exps", 
+    "overwrite": true, 
+    "fast": true, 
+    "start_profile_step": 3, 
+    "end_profile_step": 5, 
+    "tuner_type": "gridsearch", 
+    "tuner_early_stopping": 5, 
+    "tuner_num_trials": 50, 
+    "model_info_path": null, 
+    "mp_size": 1, 
+    "max_train_batch_size": null, 
+    "min_train_batch_size": 1, 
+    "max_train_micro_batch_size_per_gpu": 1.024000e+03, 
+    "min_train_micro_batch_size_per_gpu": 1, 
+    "num_tuning_micro_batch_sizes": 3
+}
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   bfloat16_enabled ............. True
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   bfloat16_immediate_grad_update  False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   checkpoint_parallel_write_pipeline  False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   checkpoint_tag_validation_enabled  True
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   checkpoint_tag_validation_fail  False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   comms_config ................. <deepspeed.comm.config.DeepSpeedCommsConfig object at 0x7f194fb13430>
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   communication_data_type ...... None
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   compression_config ........... {'weight_quantization': {'shared_parameters': {'enabled': False, 'quantizer_kernel': False, 'schedule_offset': 0, 'quantize_groups': 1, 'quantize_verbose': False, 'quantization_type': 'symmetric', 'quantize_weight_in_forward': False, 'rounding': 'nearest', 'fp16_mixed_quantize': False, 'quantize_change_ratio': 0.001}, 'different_groups': {}}, 'activation_quantization': {'shared_parameters': {'enabled': False, 'quantization_type': 'symmetric', 'range_calibration': 'dynamic', 'schedule_offset': 1000}, 'different_groups': {}}, 'sparse_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'row_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'head_pruning': {'shared_parameters': {'enabled': False, 'method': 'topk', 'schedule_offset': 1000}, 'different_groups': {}}, 'channel_pruning': {'shared_parameters': {'enabled': False, 'method': 'l1', 'schedule_offset': 1000}, 'different_groups': {}}, 'layer_reduction': {'enabled': False}}
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   curriculum_enabled_legacy .... False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   curriculum_params_legacy ..... False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   data_efficiency_config ....... {'enabled': False, 'seed': 1234, 'data_sampling': {'enabled': False, 'num_epochs': 1000, 'num_workers': 0, 'curriculum_learning': {'enabled': False}}, 'data_routing': {'enabled': False, 'random_ltd': {'enabled': False, 'layer_token_lr_schedule': {'enabled': False}}}}
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   data_efficiency_enabled ...... False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   dataloader_drop_last ......... False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   disable_allgather ............ False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   dump_state ................... False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   dynamic_loss_scale_args ...... None
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   eigenvalue_enabled ........... False
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   eigenvalue_gas_boundary_resolution  1
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   eigenvalue_layer_name ........ bert.encoder.layer
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   eigenvalue_layer_num ......... 0
+[2024-10-16 03:06:36,384] [INFO] [config.py:1001:print]   eigenvalue_max_iter .......... 100
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   eigenvalue_stability ......... 1e-06
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   eigenvalue_tol ............... 0.01
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   eigenvalue_verbose ........... False
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   elasticity_enabled ........... False
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   flops_profiler_config ........ {
+    "enabled": false, 
+    "recompute_fwd_factor": 0.0, 
+    "profile_step": 1, 
+    "module_depth": -1, 
+    "top_modules": 1, 
+    "detailed": true, 
+    "output_file": null
+}
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   fp16_auto_cast ............... None
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   fp16_enabled ................. False
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   fp16_master_weights_and_gradients  False
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   global_rank .................. 0
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   grad_accum_dtype ............. None
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   gradient_accumulation_steps .. 8
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   gradient_clipping ............ 1.0
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   gradient_predivide_factor .... 1.0
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   graph_harvesting ............. False
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   hybrid_engine ................ enabled=False max_out_tokens=512 inference_tp_size=1 release_inference_cache=False pin_parameters=True tp_gather_partition_size=8
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   initial_dynamic_scale ........ 1
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   load_universal_checkpoint .... False
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   loss_scale ................... 1.0
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   memory_breakdown ............. False
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   mics_hierarchial_params_gather  False
+[2024-10-16 03:06:36,385] [INFO] [config.py:1001:print]   mics_shard_size .............. -1
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   monitor_config ............... tensorboard=TensorBoardConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') comet=CometConfig(enabled=False, samples_log_interval=100, project=None, workspace=None, api_key=None, experiment_name=None, experiment_key=None, online=None, mode=None) wandb=WandbConfig(enabled=False, group=None, team=None, project='deepspeed') csv_monitor=CSVConfig(enabled=False, output_path='', job_name='DeepSpeedJobName') enabled=False
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   nebula_config ................ {
+    "enabled": false, 
+    "persistent_storage_path": null, 
+    "persistent_time_interval": 100, 
+    "num_of_version_in_retention": 2, 
+    "enable_nebula_load": true, 
+    "load_path": null
+}
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   optimizer_legacy_fusion ...... False
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   optimizer_name ............... None
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   optimizer_params ............. None
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   pipeline ..................... {'stages': 'auto', 'partition': 'best', 'seed_layers': False, 'activation_checkpoint_interval': 0, 'pipe_partitioned': True, 'grad_partitioned': True}
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   pld_enabled .................. False
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   pld_params ................... False
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   prescale_gradients ........... False
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   scheduler_name ............... None
+[2024-10-16 03:06:36,386] [INFO] [config.py:1001:print]   scheduler_params ............. None
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   seq_parallel_communication_data_type  torch.float32
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   sparse_attention ............. None
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   sparse_gradients_enabled ..... False
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   steps_per_print .............. inf
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   timers_config ................ enabled=True synchronized=True
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   train_batch_size ............. 16
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   train_micro_batch_size_per_gpu  1
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   use_data_before_expert_parallel_  False
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   use_node_local_storage ....... False
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   wall_clock_breakdown ......... False
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   weight_quantization_config ... None
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   world_size ................... 2
+[2024-10-16 03:06:36,387] [INFO] [config.py:1001:print]   zero_allow_untested_optimizer  True
+[2024-10-16 03:06:36,388] [INFO] [config.py:1001:print]   zero_config .................. stage=0 contiguous_gradients=True reduce_scatter=True reduce_bucket_size=500000000 use_multi_rank_bucket_allreduce=True allgather_partitions=True allgather_bucket_size=500000000 overlap_comm=True load_from_fp32_weights=True elastic_checkpoint=False offload_param=None offload_optimizer=None sub_group_size=1,000,000,000 cpu_offload_param=None cpu_offload_use_pin_memory=None cpu_offload=None prefetch_bucket_size=50,000,000 param_persistence_threshold=100,000 model_persistence_threshold=sys.maxsize max_live_parameters=1,000,000,000 max_reuse_distance=1,000,000,000 gather_16bit_weights_on_model_save=False use_all_reduce_for_fetch_params=False stage3_gather_fp16_weights_on_model_save=False ignore_unused_parameters=True legacy_stage1=False round_robin_gradients=True zero_hpz_partition_size=1 zero_quantized_weights=False zero_quantized_nontrainable_weights=False zero_quantized_gradients=False mics_shard_size=-1 mics_hierarchical_params_gather=False memory_efficient_linear=True pipeline_loading_checkpoint=False override_module_apply=True
+[2024-10-16 03:06:36,388] [INFO] [config.py:1001:print]   zero_enabled ................. False
+[2024-10-16 03:06:36,388] [INFO] [config.py:1001:print]   zero_force_ds_cpu_optimizer .. True
+[2024-10-16 03:06:36,388] [INFO] [config.py:1001:print]   zero_optimization_stage ...... 0
+[2024-10-16 03:06:36,388] [INFO] [config.py:987:print_user_config]   json = {
+    "train_batch_size": 16, 
+    "train_micro_batch_size_per_gpu": 1, 
+    "gradient_accumulation_steps": 8, 
+    "gradient_clipping": 1.0, 
+    "zero_allow_untested_optimizer": true, 
+    "fp16": {
+        "enabled": false, 
+        "loss_scale": 0, 
+        "loss_scale_window": 1000, 
+        "initial_scale_power": 16, 
+        "hysteresis": 2, 
+        "min_loss_scale": 1
+    }, 
+    "bf16": {
+        "enabled": true
+    }, 
+    "zero_optimization": {
+        "stage": 0, 
+        "allgather_partitions": true, 
+        "allgather_bucket_size": 5.000000e+08, 
+        "overlap_comm": true, 
+        "reduce_scatter": true, 
+        "reduce_bucket_size": 5.000000e+08, 
+        "contiguous_gradients": true, 
+        "round_robin_gradients": true
+    }, 
+    "steps_per_print": inf
+}
+[INFO|trainer.py:2243] 2024-10-16 03:06:36,388 >> ***** Running training *****
+[INFO|trainer.py:2244] 2024-10-16 03:06:36,388 >>   Num examples = 4,000
+[INFO|trainer.py:2245] 2024-10-16 03:06:36,388 >>   Num Epochs = 2
+[INFO|trainer.py:2246] 2024-10-16 03:06:36,388 >>   Instantaneous batch size per device = 1
+[INFO|trainer.py:2249] 2024-10-16 03:06:36,388 >>   Total train batch size (w. parallel, distributed & accumulation) = 16
+[INFO|trainer.py:2250] 2024-10-16 03:06:36,388 >>   Gradient Accumulation steps = 8
+[INFO|trainer.py:2251] 2024-10-16 03:06:36,388 >>   Total optimization steps = 500
+[INFO|trainer.py:2252] 2024-10-16 03:06:36,396 >>   Number of trainable parameters = 406,847,488
+/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+  0%|          | 0/500 [00:00<?, ?it/s]/fsx/ubuntu/miniconda3/envs/llamafactory/lib/python3.10/site-packages/torch/utils/checkpoint.py:295: FutureWarning: `torch.cpu.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cpu', args...)` instead.
+  with torch.enable_grad(), device_autocast_ctx, torch.cpu.amp.autocast(**ctx.cpu_autocast_kwargs):  # type: ignore[attr-defined]
+{'loss': 0.2358, 'grad_norm': 2.1725714206695557, 'learning_rate': 6.666666666666667e-05, 'epoch': 0.04}
+  0%|          | 1/500 [00:16<2:20:14, 16.86s/it]  0%|          | 2/500 [00:28<1:56:10, 14.00s/it]  1%|          | 3/500 [00:43<1:58:24, 14.29s/it]  1%|          | 4/500 [00:56<1:53:13, 13.70s/it]  1%|          | 5/500 [01:12<1:59:25, 14.48s/it]  1%|          | 6/500 [01:26<1:59:25, 14.51s/it]  1%|▏         | 7/500 [01:40<1:57:37, 14.32s/it]  2%|▏         | 8/500 [01:53<1:53:14, 13.81s/it]  2%|▏         | 9/500 [02:07<1:54:27, 13.99s/it]  2%|▏         | 10/500 [02:20<1:52:15, 13.75s/it]                                                    2%|▏         | 10/500 [02:20<1:52:15, 13.75s/it]  2%|▏         | 11/500 [02:36<1:56:24, 14.28s/it]  2%|▏         | 12/500 [02:48<1:50:43, 13.61s/it]  3%|▎         | 13/500 [03:01<1:49:09, 13.45s/it]  3%|▎         | 14/500 [03:16<1:51:34, 13.77s/it]  3%|▎         | 15/500 [03:31<1:55:05, 14.24s/it]  3%|▎         | 16/500 [03:47<1:58:27, 14.68s/it]  3%|▎         | 17/500 [04:04<2:03:30, 15.34s/it]  4%|▎         | 18/500 [04:18<2:01:{'loss': 0.1093, 'grad_norm': 0.47239235043525696, 'learning_rate': 9.997377845227576e-05, 'epoch': 0.08}
+{'loss': 0.0804, 'grad_norm': 0.8579027056694031, 'learning_rate': 9.97641710583307e-05, 'epoch': 0.12}
+39, 15.14s/it]  4%|▍         | 19/500 [04:32<1:57:31, 14.66s/it]  4%|▍         | 20/500 [04:49<2:03:10, 15.40s/it]                                                    4%|▍         | 20/500 [04:49<2:03:10, 15.40s/it]  4%|▍         | 21/500 [05:03<1:59:10, 14.93s/it]  4%|▍         | 22/500 [05:17<1:56:59, 14.69s/it]  5%|▍         | 23/500 [05:28<1:49:35, 13.79s/it]  5%|▍         | 24/500 [05:42<1:47:54, 13.60s/it]  5%|▌         | 25/500 [05:55<1:47:21, 13.56s/it]  5%|▌         | 26/500 [06:10<1:49:03, 13.80s/it]  5%|▌         | 27/500 [06:23<1:48:12, 13.73s/it]  6%|▌         | 28/500 [06:39<1:52:15, 14.27s/it]  6%|▌         | 29/500 [06:53<1:52:23, 14.32s/it]  6%|▌         | 30/500 [07:06<1:49:53, 14.03s/it]                                                    6%|▌         | 30/500 [07:06<1:49:53, 14.03s/it]  6%|▌         | 31/500 [07:22<1:52:27, 14.39s/it]  6%|▋         | 32/500 [07:36<1:52:39, 14.44s/it]  7%|▋         | 33/500 [07:51<1:52:49, 14.50s/it]  7%{'loss': 0.084, 'grad_norm': 0.9062809348106384, 'learning_rate': 9.934583543669453e-05, 'epoch': 0.16}
+|▋         | 34/500 [08:03<1:47:50, 13.88s/it]  7%|▋         | 35/500 [08:18<1:49:59, 14.19s/it]  7%|▋         | 36/500 [08:31<1:45:50, 13.69s/it]  7%|▋         | 37/500 [08:46<1:50:03, 14.26s/it]  8%|▊         | 38/500 [09:01<1:51:07, 14.43s/it]  8%|▊         | 39/500 [09:18<1:56:15, 15.13s/it]  8%|▊         | 40/500 [09:33<1:56:25, 15.19s/it]                                                    8%|▊         | 40/500 [09:33<1:56:25, 15.19s/it]  8%|▊         | 41/500 [09:48<1:54:58, 15.03s/it]  8%|▊         | 42/500 [10:01<1:51:16, 14.58s/it]  9%|▊         | 43/500 [10:15<1:48:12, 14.21s/it]  9%|▉         | 44/500 [10:26<1:41:26, 13.35s/it]  9%|▉         | 45/500 [10:39<1:40:47, 13.29s/it]  9%|▉         | 46/500 [10:55<1:45:41, 13.97s/it]  9%|▉         | 47/500 [11:10<1:49:05, 14.45s/it] 10%|▉         | 48/500 [11:24<1:47:08, 14.22s/it] 10%|▉         | 49/500 [11:38<1:46:21, 14.15s/it] 10%|█         | 50/500 [11:52<1:46:04, 14.14s/it]                      {'loss': 0.0792, 'grad_norm': 0.7925509214401245, 'learning_rate': 9.872052623234632e-05, 'epoch': 0.2}
+{'loss': 0.1019, 'grad_norm': 1.9272477626800537, 'learning_rate': 9.789086620939936e-05, 'epoch': 0.24}
+                             10%|█         | 50/500 [11:52<1:46:04, 14.14s/it] 10%|█         | 51/500 [12:05<1:43:05, 13.78s/it] 10%|█         | 52/500 [12:21<1:47:19, 14.37s/it] 11%|█         | 53/500 [12:37<1:50:38, 14.85s/it] 11%|█         | 54/500 [12:52<1:52:05, 15.08s/it] 11%|█         | 55/500 [13:05<1:46:49, 14.40s/it] 11%|█         | 56/500 [13:18<1:43:27, 13.98s/it] 11%|█▏        | 57/500 [13:30<1:38:31, 13.35s/it] 12%|█▏        | 58/500 [13:43<1:38:05, 13.32s/it] 12%|█▏        | 59/500 [14:00<1:45:48, 14.39s/it] 12%|█▏        | 60/500 [14:15<1:47:26, 14.65s/it]                                                   12%|█▏        | 60/500 [14:15<1:47:26, 14.65s/it] 12%|█▏        | 61/500 [14:30<1:47:15, 14.66s/it] 12%|█▏        | 62/500 [14:47<1:51:33, 15.28s/it] 13%|█▎        | 63/500 [15:02<1:50:25, 15.16s/it] 13%|█▎        | 64/500 [15:14<1:42:51, 14.15s/it] 13%|█▎        | 65/500 [15:32<1:50:53, 15.30s/it] 13%|█▎        | {'loss': 0.0837, 'grad_norm': 1.4506871700286865, 'learning_rate': 9.686033525031719e-05, 'epoch': 0.28}
+{'loss': 0.0775, 'grad_norm': 4.393481731414795, 'learning_rate': 9.563325576007701e-05, 'epoch': 0.32}
+66/500 [15:44<1:44:02, 14.38s/it] 13%|█▎        | 67/500 [15:57<1:42:08, 14.15s/it] 14%|█▎        | 68/500 [16:11<1:41:02, 14.03s/it] 14%|█▍        | 69/500 [16:24<1:37:42, 13.60s/it] 14%|█▍        | 70/500 [16:38<1:38:06, 13.69s/it]                                                   14%|█▍        | 70/500 [16:38<1:38:06, 13.69s/it] 14%|█▍        | 71/500 [16:52<1:38:14, 13.74s/it] 14%|█▍        | 72/500 [17:05<1:37:41, 13.69s/it] 15%|█▍        | 73/500 [17:18<1:35:08, 13.37s/it] 15%|█▍        | 74/500 [17:36<1:45:26, 14.85s/it] 15%|█▌        | 75/500 [17:50<1:43:04, 14.55s/it] 15%|█▌        | 76/500 [18:02<1:37:56, 13.86s/it] 15%|█▌        | 77/500 [18:14<1:34:29, 13.40s/it] 16%|█▌        | 78/500 [18:29<1:37:28, 13.86s/it] 16%|█▌        | 79/500 [18:43<1:35:55, 13.67s/it] 16%|█▌        | 80/500 [18:59<1:41:41, 14.53s/it]                                                   16%|█▌        | 80/500 [18:59<1:41:41, 14.53s/it] 16%|�{'loss': 0.0907, 'grad_norm': 0.7367987036705017, 'learning_rate': 9.421477453650118e-05, 'epoch': 0.36}
+��▌        | 81/500 [19:14<1:42:07, 14.62s/it] 16%|█▋        | 82/500 [19:30<1:44:05, 14.94s/it] 17%|█▋        | 83/500 [19:41<1:36:39, 13.91s/it] 17%|█▋        | 84/500 [19:54<1:35:09, 13.72s/it] 17%|█▋        | 85/500 [20:10<1:37:45, 14.13s/it] 17%|█▋        | 86/500 [20:31<1:52:23, 16.29s/it] 17%|█▋        | 87/500 [20:43<1:44:33, 15.19s/it] 18%|█▊        | 88/500 [20:55<1:37:38, 14.22s/it] 18%|█▊        | 89/500 [21:07<1:32:21, 13.48s/it] 18%|█▊        | 90/500 [21:20<1:31:09, 13.34s/it]                                                   18%|█▊        | 90/500 [21:20<1:31:09, 13.34s/it] 18%|█▊        | 91/500 [21:38<1:39:15, 14.56s/it] 18%|█▊        | 92/500 [21:51<1:36:25, 14.18s/it] 19%|█▊        | 93/500 [22:03<1:32:08, 13.58s/it] 19%|█▉        | 94/500 [22:18<1:34:39, 13.99s/it] 19%|█▉        | 95/500 [22:30<1:30:48, 13.45s/it] 19%|█▉        | 96/500 [22:49<1:40:53, 14.98s/it] 19%|█▉        | 97/500 [23:03<1:38:48,{'loss': 0.088, 'grad_norm': 1.4387612342834473, 'learning_rate': 9.261084118279847e-05, 'epoch': 0.4}
+{'loss': 0.0727, 'grad_norm': 0.523560643196106, 'learning_rate': 9.082818315286055e-05, 'epoch': 0.44}
+ 14.71s/it] 20%|█▉        | 98/500 [23:18<1:40:01, 14.93s/it] 20%|█▉        | 99/500 [23:34<1:41:59, 15.26s/it] 20%|██        | 100/500 [23:45<1:32:53, 13.93s/it]                                                    20%|██        | 100/500 [23:45<1:32:53, 13.93s/it] 20%|██        | 101/500 [23:57<1:29:07, 13.40s/it] 20%|██        | 102/500 [24:11<1:29:18, 13.46s/it] 21%|██        | 103/500 [24:24<1:27:29, 13.22s/it] 21%|██        | 104/500 [24:36<1:25:50, 13.01s/it] 21%|██        | 105/500 [24:51<1:29:54, 13.66s/it] 21%|██        | 106/500 [25:03<1:25:42, 13.05s/it] 21%|██▏       | 107/500 [25:16<1:25:57, 13.12s/it] 22%|██▏       | 108/500 [25:32<1:31:10, 13.96s/it] 22%|██▏       | 109/500 [25:46<1:31:27, 14.03s/it] 22%|██▏       | 110/500 [25:57<1:25:10, 13.10s/it]                                                    22%|██▏       | 110/500 [25:57<1:25:10, 13.10s/it] 22%|██▏       | 111/500 [26:10<1:23:19, 12.85s/it]{'loss': 0.0846, 'grad_norm': 5.0814361572265625, 'learning_rate': 8.887427753398248e-05, 'epoch': 0.48}
+ 22%|██▏       | 112/500 [26:26<1:29:26, 13.83s/it] 23%|██▎       | 113/500 [26:39<1:28:24, 13.71s/it] 23%|██▎       | 114/500 [26:53<1:27:53, 13.66s/it] 23%|██▎       | 115/500 [27:07<1:29:34, 13.96s/it] 23%|██▎       | 116/500 [27:24<1:33:45, 14.65s/it] 23%|██▎       | 117/500 [27:39<1:35:58, 15.04s/it] 24%|██▎       | 118/500 [27:53<1:33:34, 14.70s/it] 24%|██▍       | 119/500 [28:06<1:29:28, 14.09s/it] 24%|██▍       | 120/500 [28:19<1:27:42, 13.85s/it]                                                    24%|██▍       | 120/500 [28:19<1:27:42, 13.85s/it] 24%|██▍       | 121/500 [28:34<1:28:09, 13.96s/it] 24%|██▍       | 122/500 [28:47<1:26:54, 13.80s/it] 25%|██▍       | 123/500 [28:59<1:22:53, 13.19s/it] 25%|██▍       | 124/500 [29:12<1:22:07, 13.10s/it] 25%|██▌       | 125/500 [29:24<1:21:07, 12.98s/it] 25%|██▌       | 126/500 [29:40<1:25:13, 13.67s/it] 25%|██▌       | 127/500 [29:53<1:24:{'loss': 0.0703, 'grad_norm': 1.3116517066955566, 'learning_rate': 8.675731968536002e-05, 'epoch': 0.52}
+{'loss': 0.0733, 'grad_norm': 1.619247555732727, 'learning_rate': 8.448618886390522e-05, 'epoch': 0.56}
+39, 13.62s/it] 26%|██▌       | 128/500 [30:06<1:22:34, 13.32s/it] 26%|██▌       | 129/500 [30:18<1:20:19, 12.99s/it] 26%|██▌       | 130/500 [30:38<1:33:07, 15.10s/it]                                                    26%|██▌       | 130/500 [30:38<1:33:07, 15.10s/it] 26%|██▌       | 131/500 [30:50<1:26:40, 14.09s/it] 26%|██▋       | 132/500 [31:04<1:26:19, 14.08s/it] 27%|██▋       | 133/500 [31:18<1:26:36, 14.16s/it] 27%|██▋       | 134/500 [31:30<1:22:08, 13.47s/it] 27%|██▋       | 135/500 [31:45<1:24:11, 13.84s/it] 27%|██▋       | 136/500 [31:58<1:22:49, 13.65s/it] 27%|██▋       | 137/500 [32:15<1:28:16, 14.59s/it] 28%|██▊       | 138/500 [32:30<1:30:05, 14.93s/it] 28%|██▊       | 139/500 [32:43<1:26:19, 14.35s/it] 28%|██▊       | 140/500 [32:56<1:22:48, 13.80s/it]                                                    28%|██▊       | 140/500 [32:56<1:22:48, 13.80s/it] 28%|██▊       | 141/500 [3{'loss': 0.0948, 'grad_norm': 0.663774311542511, 'learning_rate': 8.2070410981557e-05, 'epoch': 0.6}
+3:08<1:18:45, 13.16s/it] 28%|██▊       | 142/500 [33:21<1:18:21, 13.13s/it] 29%|██▊       | 143/500 [33:33<1:16:47, 12.90s/it] 29%|██▉       | 144/500 [33:46<1:16:39, 12.92s/it] 29%|██▉       | 145/500 [34:00<1:17:35, 13.11s/it] 29%|██▉       | 146/500 [34:14<1:20:11, 13.59s/it] 29%|██▉       | 147/500 [34:28<1:19:33, 13.52s/it] 30%|██▉       | 148/500 [34:41<1:19:15, 13.51s/it] 30%|██▉       | 149/500 [34:53<1:16:13, 13.03s/it] 30%|███       | 150/500 [35:07<1:17:05, 13.21s/it]                                                    30%|███       | 150/500 [35:07<1:17:05, 13.21s/it] 30%|███       | 151/500 [35:20<1:17:02, 13.25s/it] 30%|███       | 152/500 [35:32<1:14:53, 12.91s/it] 31%|███       | 153/500 [35:45<1:15:00, 12.97s/it] 31%|███       | 154/500 [35:59<1:16:10, 13.21s/it] 31%|███       | 155/500 [36:13<1:17:39, 13.51s/it] 31%|███       | 156/500 [36:27<1:17:29, 13.52s/it] 31%|███▏ {'loss': 0.0697, 'grad_norm': 0.8277831673622131, 'learning_rate': 7.952011865029614e-05, 'epoch': 0.64}
+{'loss': 0.0824, 'grad_norm': 0.6266399025917053, 'learning_rate': 7.68460086824492e-05, 'epoch': 0.68}
+     | 157/500 [36:43<1:22:45, 14.48s/it] 32%|███▏      | 158/500 [36:57<1:20:10, 14.07s/it] 32%|███▏      | 159/500 [37:12<1:21:58, 14.42s/it] 32%|███▏      | 160/500 [37:27<1:22:32, 14.57s/it]                                                    32%|███▏      | 160/500 [37:27<1:22:32, 14.57s/it] 32%|███▏      | 161/500 [37:39<1:18:58, 13.98s/it] 32%|███▏      | 162/500 [37:57<1:24:50, 15.06s/it] 33%|███▎      | 163/500 [38:11<1:22:59, 14.77s/it] 33%|███▎      | 164/500 [38:29<1:27:21, 15.60s/it] 33%|███▎      | 165/500 [38:44<1:27:10, 15.61s/it] 33%|███▎      | 166/500 [38:57<1:21:45, 14.69s/it] 33%|███▎      | 167/500 [39:10<1:18:35, 14.16s/it] 34%|███▎      | 168/500 [39:25<1:20:17, 14.51s/it] 34%|███▍      | 169/500 [39:37<1:16:09, 13.81s/it] 34%|███▍      | 170/500 [39:51<1:16:08, 13.84s/it]                                                    34%|███▍      | 170/500 [39{'loss': 0.0672, 'grad_norm': 0.6083434224128723, 'learning_rate': 7.405929722454026e-05, 'epoch': 0.72}
+:51<1:16:08, 13.84s/it] 34%|███▍      | 171/500 [40:02<1:10:58, 12.94s/it] 34%|███▍      | 172/500 [40:15<1:11:07, 13.01s/it] 35%|███▍      | 173/500 [40:29<1:12:16, 13.26s/it] 35%|███▍      | 174/500 [40:43<1:13:27, 13.52s/it] 35%|███▌      | 175/500 [40:59<1:16:35, 14.14s/it] 35%|███▌      | 176/500 [41:12<1:15:09, 13.92s/it] 35%|███▌      | 177/500 [41:23<1:10:45, 13.14s/it] 36%|███▌      | 178/500 [41:36<1:10:24, 13.12s/it] 36%|███▌      | 179/500 [41:53<1:16:15, 14.25s/it] 36%|███▌      | 180/500 [42:09<1:17:48, 14.59s/it]                                                    36%|███▌      | 180/500 [42:09<1:17:48, 14.59s/it] 36%|███▌      | 181/500 [42:24<1:19:06, 14.88s/it] 36%|███▋      | 182/500 [42:37<1:15:49, 14.31s/it] 37%|███▋      | 183/500 [42:50<1:13:53, 13.99s/it] 37%|███▋      | 184/500 [43:04<1:12:27, 13.76s/it] 37%|███▋      | 185/500 [43:19<1:14:00{'loss': 0.0721, 'grad_norm': 1.9397876262664795, 'learning_rate': 7.117167271287453e-05, 'epoch': 0.76}
+, 14.10s/it] 37%|███▋      | 186/500 [43:32<1:12:42, 13.89s/it] 37%|███▋      | 187/500 [43:45<1:11:03, 13.62s/it] 38%|███▊      | 188/500 [43:56<1:06:32, 12.80s/it] 38%|███▊      | 189/500 [44:08<1:05:22, 12.61s/it] 38%|███▊      | 190/500 [44:23<1:08:43, 13.30s/it]                                                    38%|███▊      | 190/500 [44:23<1:08:43, 13.30s/it] 38%|███▊      | 191/500 [44:35<1:07:18, 13.07s/it] 38%|███▊      | 192/500 [44:49<1:07:51, 13.22s/it] 39%|███▊      | 193/500 [45:01<1:05:49, 12.87s/it] 39%|███▉      | 194/500 [45:18<1:12:03, 14.13s/it] 39%|███▉      | 195/500 [45:32<1:11:59, 14.16s/it] 39%|███▉      | 196/500 [45:45<1:08:38, 13.55s/it] 39%|███▉      | 197/500 [46:01<1:12:11, 14.30s/it] 40%|███▉      | 198/500 [46:15<1:11:46, 14.26s/it] 40%|███▉      | 199/500 [46:29<1:11:22, 14.23s/it] 40%|████      | 200/500 [46:41<1:08:19, 13.67s/it{'loss': 0.0814, 'grad_norm': 0.7551220059394836, 'learning_rate': 6.819524684817438e-05, 'epoch': 0.8}
+{'loss': 0.0714, 'grad_norm': 1.6904265880584717, 'learning_rate': 6.514250379489753e-05, 'epoch': 0.84}
+]                                                    40%|████      | 200/500 [46:41<1:08:19, 13.67s/it] 40%|████      | 201/500 [46:56<1:09:18, 13.91s/it] 40%|████      | 202/500 [47:08<1:06:31, 13.39s/it] 41%|████      | 203/500 [47:23<1:08:17, 13.80s/it] 41%|████      | 204/500 [47:34<1:04:33, 13.09s/it] 41%|████      | 205/500 [47:47<1:04:32, 13.13s/it] 41%|████      | 206/500 [48:01<1:05:34, 13.38s/it] 41%|████▏     | 207/500 [48:15<1:05:57, 13.51s/it] 42%|████▏     | 208/500 [48:29<1:06:46, 13.72s/it] 42%|████▏     | 209/500 [48:41<1:03:01, 13.00s/it] 42%|████▏     | 210/500 [48:53<1:01:58, 12.82s/it]                                                    42%|████▏     | 210/500 [48:53<1:01:58, 12.82s/it] 42%|████▏     | 211/500 [49:05<1:00:57, 12.66s/it] 42%|████▏     | 212/500 [49:21<1:05:40, 13.68s/it] 43%|████▎     | 213/500 [49:35<1:05:18, 13.65s/it]{'loss': 0.0798, 'grad_norm': 0.5010191798210144, 'learning_rate': 6.202624781831268e-05, 'epoch': 0.88}
+ 43%|████▎     | 214/500 [49:48<1:04:57, 13.63s/it] 43%|████▎     | 215/500 [50:00<1:02:04, 13.07s/it] 43%|████▎     | 216/500 [50:15<1:03:59, 13.52s/it] 43%|████▎     | 217/500 [50:28<1:03:32, 13.47s/it] 44%|████▎     | 218/500 [50:41<1:02:46, 13.36s/it] 44%|████▍     | 219/500 [50:54<1:01:13, 13.07s/it] 44%|████▍     | 220/500 [51:11<1:07:05, 14.38s/it]                                                    44%|████▍     | 220/500 [51:11<1:07:05, 14.38s/it] 44%|████▍     | 221/500 [51:26<1:08:00, 14.62s/it] 44%|████▍     | 222/500 [51:39<1:04:49, 13.99s/it] 45%|████▍     | 223/500 [51:51<1:02:18, 13.50s/it] 45%|████▍     | 224/500 [52:07<1:05:34, 14.26s/it] 45%|████▌     | 225/500 [52:21<1:04:10, 14.00s/it] 45%|████▌     | 226/500 [52:34<1:02:45, 13.74s/it] 45%|████▌     | 227/500 [52:51<1:07:12, 14.77s/it] 46%|████▌     | 228/500 [53:05{'loss': 0.0718, 'grad_norm': 0.6069243550300598, 'learning_rate': 5.885954957896115e-05, 'epoch': 0.92}
+{'loss': 0.0545, 'grad_norm': 0.8556644916534424, 'learning_rate': 5.565569130976422e-05, 'epoch': 0.96}
+<1:06:20, 14.64s/it] 46%|████▌     | 229/500 [53:21<1:07:08, 14.87s/it] 46%|████▌     | 230/500 [53:32<1:02:10, 13.82s/it]                                                    46%|████▌     | 230/500 [53:32<1:02:10, 13.82s/it] 46%|████▌     | 231/500 [53:45<1:01:14, 13.66s/it] 46%|████▋     | 232/500 [53:59<1:01:07, 13.68s/it] 47%|████▋     | 233/500 [54:12<1:00:14, 13.54s/it] 47%|████▋     | 234/500 [54:27<1:01:28, 13.87s/it] 47%|████▋     | 235/500 [54:42<1:02:37, 14.18s/it] 47%|████▋     | 236/500 [54:55<1:01:02, 13.87s/it] 47%|████▋     | 237/500 [55:07<58:26, 13.33s/it]   48%|████▊     | 238/500 [55:22<1:00:15, 13.80s/it] 48%|████▊     | 239/500 [55:36<59:53, 13.77s/it]   48%|████▊     | 240/500 [55:47<56:51, 13.12s/it]                                                  48%|████▊     | 240/500 [55:47<56:51, 13.12s/it] 48%|████▊     | 241/500 {'loss': 0.0679, 'grad_norm': 0.3935255706310272, 'learning_rate': 5.242811110572242e-05, 'epoch': 1.0}
+[55:59<55:30, 12.86s/it] 48%|████▊     | 242/500 [56:16<1:00:38, 14.10s/it] 49%|████▊     | 243/500 [56:29<58:39, 13.69s/it]   49%|████▉     | 244/500 [56:43<59:12, 13.88s/it] 49%|████▉     | 245/500 [56:56<57:45, 13.59s/it] 49%|████▉     | 246/500 [57:11<59:10, 13.98s/it] 49%|████▉     | 247/500 [57:28<1:02:05, 14.73s/it] 50%|████▉     | 248/500 [57:40<58:41, 13.97s/it]   50%|████▉     | 249/500 [57:52<55:29, 13.26s/it] 50%|█████     | 250/500 [58:05<55:17, 13.27s/it]                                                  50%|█████     | 250/500 [58:05<55:17, 13.27s/it] 50%|█████     | 251/500 [58:18<54:29, 13.13s/it] 50%|█████     | 252/500 [58:31<54:59, 13.30s/it] 51%|█████     | 253/500 [58:48<59:08, 14.37s/it] 51%|█████     | 254/500 [59:02<58:08, 14.18s/it] 51%|█████     | 255/500 [59:16<57:42, 14.13s/it] 51%|█████     | 256/500 [59:3{'loss': 0.0554, 'grad_norm': 0.34014588594436646, 'learning_rate': 4.919034655987493e-05, 'epoch': 1.04}
+1<58:50, 14.47s/it] 51%|█████▏    | 257/500 [59:44<56:58, 14.07s/it] 52%|█████▏    | 258/500 [1:00:00<58:43, 14.56s/it] 52%|█████▏    | 259/500 [1:00:14<58:03, 14.45s/it] 52%|█████▏    | 260/500 [1:00:29<58:04, 14.52s/it]                                                    52%|█████▏    | 260/500 [1:00:29<58:04, 14.52s/it] 52%|█████▏    | 261/500 [1:00:46<1:00:28, 15.18s/it] 52%|█████▏    | 262/500 [1:00:59<58:08, 14.66s/it]   53%|█████▎    | 263/500 [1:01:11<55:09, 13.97s/it] 53%|█████▎    | 264/500 [1:01:24<53:04, 13.49s/it] 53%|█████▎    | 265/500 [1:01:37<52:15, 13.34s/it] 53%|█████▎    | 266/500 [1:01:52<53:50, 13.81s/it] 53%|█████▎    | 267/500 [1:02:05<52:55, 13.63s/it] 54%|█████▎    | 268/500 [1:02:18<52:22, 13.54s/it] 54%|█████▍    | 269/500 [1:02:34<54:47, 14.23s/it] 54%|█████▍    | 270/500 [1:02:46<52:04, {'loss': 0.0542, 'grad_norm': 0.3545817732810974, 'learning_rate': 4.59559779819298e-05, 'epoch': 1.08}
+{'loss': 0.035, 'grad_norm': 0.6274283528327942, 'learning_rate': 4.27385714377255e-05, 'epoch': 1.12}
+13.59s/it]                                                    54%|█████▍    | 270/500 [1:02:46<52:04, 13.59s/it] 54%|█████▍    | 271/500 [1:02:59<50:54, 13.34s/it] 54%|█████▍    | 272/500 [1:03:12<49:57, 13.15s/it] 55%|█████▍    | 273/500 [1:03:26<50:49, 13.43s/it] 55%|█████▍    | 274/500 [1:03:37<47:50, 12.70s/it] 55%|█████▌    | 275/500 [1:03:51<49:41, 13.25s/it] 55%|█████▌    | 276/500 [1:04:04<49:18, 13.21s/it] 55%|█████▌    | 277/500 [1:04:20<51:37, 13.89s/it] 56%|█████▌    | 278/500 [1:04:31<48:25, 13.09s/it] 56%|█████▌    | 279/500 [1:04:44<47:34, 12.92s/it] 56%|█████▌    | 280/500 [1:04:58<49:00, 13.36s/it]                                                    56%|█████▌    | 280/500 [1:04:58<49:00, 13.36s/it] 56%|█████▌    | 281/500 [1:05:12<49:33, 13.58s/it] 56%|█████▋    | 282/500 [1:05:26<49:22, 13.59s/it] 57%|██{'loss': 0.0522, 'grad_norm': 0.40748921036720276, 'learning_rate': 3.955162184843625e-05, 'epoch': 1.16}
+███▋    | 283/500 [1:05:43<52:36, 14.55s/it] 57%|█████▋    | 284/500 [1:05:59<53:56, 14.98s/it] 57%|█████▋    | 285/500 [1:06:12<51:31, 14.38s/it] 57%|█████▋    | 286/500 [1:06:27<52:56, 14.84s/it] 57%|█████▋    | 287/500 [1:06:39<49:04, 13.83s/it] 58%|█████▊    | 288/500 [1:06:53<49:15, 13.94s/it] 58%|█████▊    | 289/500 [1:07:07<48:52, 13.90s/it] 58%|█████▊    | 290/500 [1:07:21<49:05, 14.03s/it]                                                    58%|█████▊    | 290/500 [1:07:21<49:05, 14.03s/it] 58%|█████▊    | 291/500 [1:07:35<48:45, 14.00s/it] 58%|█████▊    | 292/500 [1:07:50<49:02, 14.15s/it] 59%|█████▊    | 293/500 [1:08:04<48:57, 14.19s/it] 59%|█████▉    | 294/500 [1:08:16<46:21, 13.50s/it] 59%|█████▉    | 295/500 [1:08:29<45:41, 13.38s/it] 59%|█████▉    | 296/500 [1:08:45<48:15, 14.19s/it] 59%|█████�{'loss': 0.0451, 'grad_norm': 0.6422075629234314, 'learning_rate': 3.640849638818286e-05, 'epoch': 1.2}
+�    | 297/500 [1:08:59<47:32, 14.05s/it] 60%|█████▉    | 298/500 [1:09:11<45:45, 13.59s/it] 60%|█████▉    | 299/500 [1:09:24<44:43, 13.35s/it] 60%|██████    | 300/500 [1:09:40<47:32, 14.26s/it]                                                    60%|██████    | 300/500 [1:09:40<47:32, 14.26s/it] 60%|██████    | 301/500 [1:09:56<48:29, 14.62s/it] 60%|██████    | 302/500 [1:10:12<49:32, 15.01s/it] 61%|██████    | 303/500 [1:10:30<52:22, 15.95s/it] 61%|██████    | 304/500 [1:10:43<49:31, 15.16s/it] 61%|██████    | 305/500 [1:10:55<46:14, 14.23s/it] 61%|██████    | 306/500 [1:11:11<47:26, 14.67s/it] 61%|██████▏   | 307/500 [1:11:27<48:14, 15.00s/it] 62%|██████▏   | 308/500 [1:11:41<47:37, 14.88s/it] 62%|██████▏   | 309/500 [1:11:58<49:02, 15.41s/it] 62%|██████▏   | 310/500 [1:12:11<46:31, 14.69s/it]                         {'loss': 0.0497, 'grad_norm': 0.6471930146217346, 'learning_rate': 3.332237841745898e-05, 'epoch': 1.24}
+{'loss': 0.0524, 'grad_norm': 0.34096759557724, 'learning_rate': 3.0306212187535653e-05, 'epoch': 1.28}
+                           62%|██████▏   | 310/500 [1:12:11<46:31, 14.69s/it] 62%|██████▏   | 311/500 [1:12:25<45:46, 14.53s/it] 62%|██████▏   | 312/500 [1:12:40<45:28, 14.51s/it] 63%|██████▎   | 313/500 [1:12:52<43:32, 13.97s/it] 63%|██████▎   | 314/500 [1:13:07<43:34, 14.06s/it] 63%|██████▎   | 315/500 [1:13:20<42:28, 13.78s/it] 63%|██████▎   | 316/500 [1:13:31<40:13, 13.12s/it] 63%|██████▎   | 317/500 [1:13:45<40:30, 13.28s/it] 64%|██████▎   | 318/500 [1:13:58<40:15, 13.27s/it] 64%|██████▍   | 319/500 [1:14:10<38:46, 12.85s/it] 64%|██████▍   | 320/500 [1:14:23<38:56, 12.98s/it]                                                    64%|██████▍   | 320/500 [1:14:23<38:56, 12.98s/it] 64%|██████▍   | 321/500 [1:14:35<37:26, 12.55s/it] 64%|██████▍   | 322/500 [1:14:47<37:03, 12.49s/it] 65%|████�{'loss': 0.048, 'grad_norm': 0.2802571654319763, 'learning_rate': 2.737264854777306e-05, 'epoch': 1.32}
+�█▍   | 323/500 [1:15:03<39:27, 13.37s/it] 65%|██████▍   | 324/500 [1:15:16<38:46, 13.22s/it] 65%|██████▌   | 325/500 [1:15:33<42:02, 14.42s/it] 65%|██████▌   | 326/500 [1:15:46<41:03, 14.16s/it] 65%|██████▌   | 327/500 [1:15:59<39:05, 13.56s/it] 66%|██████▌   | 328/500 [1:16:10<37:22, 13.04s/it] 66%|██████▌   | 329/500 [1:16:28<41:08, 14.44s/it] 66%|██████▌   | 330/500 [1:16:43<41:00, 14.47s/it]                                                    66%|██████▌   | 330/500 [1:16:43<41:00, 14.47s/it] 66%|██████▌   | 331/500 [1:16:55<38:39, 13.72s/it] 66%|██████▋   | 332/500 [1:17:06<36:17, 12.96s/it] 67%|██████▋   | 333/500 [1:17:22<38:42, 13.91s/it] 67%|██████▋   | 334/500 [1:17:37<39:18, 14.21s/it] 67%|██████▋   | 335/500 [1:17:48<36:33, 13.30s/it] 67%|██████▋   | 336/500 [1:18:01<35:44, 13.07s/it]{'loss': 0.0456, 'grad_norm': 0.8754376769065857, 'learning_rate': 2.4533991883561868e-05, 'epoch': 1.36}
+ 67%|██████▋   | 337/500 [1:18:13<35:05, 12.91s/it] 68%|██████▊   | 338/500 [1:18:25<34:17, 12.70s/it] 68%|██████▊   | 339/500 [1:18:39<34:55, 13.01s/it] 68%|██████▊   | 340/500 [1:18:54<35:53, 13.46s/it]                                                    68%|██████▊   | 340/500 [1:18:54<35:53, 13.46s/it] 68%|██████▊   | 341/500 [1:19:06<34:42, 13.10s/it] 68%|██████▊   | 342/500 [1:19:19<34:36, 13.14s/it] 69%|██████▊   | 343/500 [1:19:34<35:34, 13.60s/it] 69%|██████▉   | 344/500 [1:19:47<35:19, 13.59s/it] 69%|██████▉   | 345/500 [1:20:01<35:27, 13.73s/it] 69%|██████▉   | 346/500 [1:20:16<36:15, 14.13s/it] 69%|██████▉   | 347/500 [1:20:34<38:59, 15.29s/it] 70%|██████▉   | 348/500 [1:20:49<38:35, 15.23s/it] 70%|██████▉   | 349/500 [1:21:04<37:48, 15.02s/it] 70%|███████   | 350/500 [1:21:18{'loss': 0.0406, 'grad_norm': 0.7810028195381165, 'learning_rate': 2.180214850745467e-05, 'epoch': 1.4}
+{'loss': 0.0466, 'grad_norm': 1.3330891132354736, 'learning_rate': 1.9188576719953633e-05, 'epoch': 1.44}
+<36:39, 14.66s/it]                                                    70%|███████   | 350/500 [1:21:18<36:39, 14.66s/it] 70%|███████   | 351/500 [1:21:33<36:37, 14.75s/it] 70%|███████   | 352/500 [1:21:46<35:28, 14.38s/it] 71%|███████   | 353/500 [1:22:00<34:59, 14.28s/it] 71%|███████   | 354/500 [1:22:15<35:14, 14.48s/it] 71%|███████   | 355/500 [1:22:30<35:21, 14.63s/it] 71%|███████   | 356/500 [1:22:44<34:09, 14.23s/it] 71%|███████▏  | 357/500 [1:22:59<34:34, 14.50s/it] 72%|███████▏  | 358/500 [1:23:11<32:28, 13.72s/it] 72%|███████▏  | 359/500 [1:23:24<31:44, 13.51s/it] 72%|███████▏  | 360/500 [1:23:39<32:56, 14.12s/it]                                                    72%|███████▏  | 360/500 [1:23:39<32:56, 14.12s/it] 72%|███████▏  | 361/500 [1:23:55<33:38, 14.52s/it] 72%|███████▏{'loss': 0.0362, 'grad_norm': 0.39087557792663574, 'learning_rate': 1.6704238749415957e-05, 'epoch': 1.48}
+  | 362/500 [1:24:09<33:17, 14.47s/it] 73%|███████▎  | 363/500 [1:24:23<32:45, 14.35s/it] 73%|███████▎  | 364/500 [1:24:35<30:40, 13.54s/it] 73%|███████▎  | 365/500 [1:24:50<31:49, 14.14s/it] 73%|███████▎  | 366/500 [1:25:05<31:46, 14.23s/it] 73%|███████▎  | 367/500 [1:25:18<31:11, 14.07s/it] 74%|███████▎  | 368/500 [1:25:32<30:27, 13.85s/it] 74%|███████▍  | 369/500 [1:25:47<31:08, 14.26s/it] 74%|███████▍  | 370/500 [1:25:59<29:42, 13.71s/it]                                                    74%|███████▍  | 370/500 [1:25:59<29:42, 13.71s/it] 74%|███████▍  | 371/500 [1:26:14<30:12, 14.05s/it] 74%|███████▍  | 372/500 [1:26:28<29:42, 13.93s/it] 75%|███████▍  | 373/500 [1:26:41<29:15, 13.83s/it] 75%|███████▍  | 374/500 [1:26:54<28:18, 13.48s/it] 75%|███████▌  | 375/500 [1:27:0{'loss': 0.0369, 'grad_norm': 0.6192125082015991, 'learning_rate': 1.4359554772658552e-05, 'epoch': 1.52}
+8<28:11, 13.54s/it] 75%|███████▌  | 376/500 [1:27:22<28:38, 13.86s/it] 75%|███████▌  | 377/500 [1:27:38<29:35, 14.43s/it] 76%|███████▌  | 378/500 [1:27:50<27:29, 13.52s/it] 76%|███████▌  | 379/500 [1:28:05<28:24, 14.08s/it] 76%|███████▌  | 380/500 [1:28:18<27:50, 13.92s/it]                                                    76%|███████▌  | 380/500 [1:28:18<27:50, 13.92s/it] 76%|███████▌  | 381/500 [1:28:32<27:29, 13.86s/it] 76%|███████▋  | 382/500 [1:28:45<26:25, 13.44s/it] 77%|███████▋  | 383/500 [1:28:59<26:38, 13.66s/it] 77%|███████▋  | 384/500 [1:29:13<26:55, 13.93s/it] 77%|███████▋  | 385/500 [1:29:28<27:03, 14.11s/it] 77%|███████▋  | 386/500 [1:29:40<25:35, 13.47s/it] 77%|███████▋  | 387/500 [1:29:53<25:18, 13.44s/it] 78%|███████▊  | 388/500 [1:30:11<27:20, 14.64s/it]{'loss': 0.0493, 'grad_norm': 1.1813719272613525, 'learning_rate': 1.2164359209115234e-05, 'epoch': 1.56}
+{'loss': 0.0406, 'grad_norm': 0.5478941798210144, 'learning_rate': 1.012785947186397e-05, 'epoch': 1.6}
+ 78%|███████▊  | 389/500 [1:30:22<25:20, 13.70s/it] 78%|███████▊  | 390/500 [1:30:36<25:12, 13.75s/it]                                                    78%|███████▊  | 390/500 [1:30:36<25:12, 13.75s/it] 78%|███████▊  | 391/500 [1:30:51<25:44, 14.17s/it] 78%|███████▊  | 392/500 [1:31:07<26:19, 14.63s/it] 79%|███████▊  | 393/500 [1:31:21<25:54, 14.53s/it] 79%|███████▉  | 394/500 [1:31:35<25:21, 14.35s/it] 79%|███████▉  | 395/500 [1:31:48<24:33, 14.03s/it] 79%|███████▉  | 396/500 [1:32:01<23:44, 13.70s/it] 79%|███████▉  | 397/500 [1:32:14<23:03, 13.44s/it] 80%|███████▉  | 398/500 [1:32:26<21:46, 12.81s/it] 80%|███████▉  | 399/500 [1:32:39<21:55, 13.02s/it] 80%|████████  | 400/500 [1:32:54<22:45, 13.65s/it]                                                    80%|████████  | {'loss': 0.0498, 'grad_norm': 0.4747471511363983, 'learning_rate': 8.25859734853645e-06, 'epoch': 1.64}
+400/500 [1:32:54<22:45, 13.65s/it] 80%|████████  | 401/500 [1:33:09<23:05, 14.00s/it] 80%|████████  | 402/500 [1:33:22<22:34, 13.83s/it] 81%|████████  | 403/500 [1:33:35<21:47, 13.48s/it] 81%|████████  | 404/500 [1:33:52<23:00, 14.38s/it] 81%|████████  | 405/500 [1:34:04<21:52, 13.82s/it] 81%|████████  | 406/500 [1:34:21<23:05, 14.74s/it] 81%|████████▏ | 407/500 [1:34:34<21:57, 14.17s/it] 82%|████████▏ | 408/500 [1:34:48<21:42, 14.15s/it] 82%|████████▏ | 409/500 [1:35:01<20:51, 13.75s/it] 82%|████████▏ | 410/500 [1:35:18<22:10, 14.78s/it]                                                    82%|████████▏ | 410/500 [1:35:18<22:10, 14.78s/it] 82%|████████▏ | 411/500 [1:35:32<21:43, 14.64s/it] 82%|████████▏ | 412/500 [1:35:44<20:17, 13.84s/it] 83%|████████▎ | 413{'loss': 0.0442, 'grad_norm': 0.5428338050842285, 'learning_rate': 6.564413174092443e-06, 'epoch': 1.68}
+/500 [1:35:56<19:16, 13.29s/it] 83%|████████▎ | 414/500 [1:36:11<19:30, 13.61s/it] 83%|████████▎ | 415/500 [1:36:24<19:14, 13.58s/it] 83%|████████▎ | 416/500 [1:36:39<19:23, 13.85s/it] 83%|████████▎ | 417/500 [1:36:51<18:36, 13.46s/it] 84%|████████▎ | 418/500 [1:37:04<18:03, 13.21s/it] 84%|████████▍ | 419/500 [1:37:18<18:14, 13.52s/it] 84%|████████▍ | 420/500 [1:37:35<19:24, 14.55s/it]                                                    84%|████████▍ | 420/500 [1:37:35<19:24, 14.55s/it] 84%|████████▍ | 421/500 [1:37:49<19:09, 14.55s/it] 84%|████████▍ | 422/500 [1:38:02<18:09, 13.97s/it] 85%|████████▍ | 423/500 [1:38:16<17:54, 13.96s/it] 85%|████████▍ | 424/500 [1:38:35<19:25, 15.34s/it] 85%|████████▌ | 425/500 [1:38:47<18:04, 14.46s/it] 85%|████████{'loss': 0.0456, 'grad_norm': 1.1855297088623047, 'learning_rate': 5.05241294573024e-06, 'epoch': 1.72}
+▌ | 426/500 [1:39:00<17:24, 14.12s/it] 85%|████████▌ | 427/500 [1:39:14<17:03, 14.02s/it] 86%|████████▌ | 428/500 [1:39:29<17:04, 14.23s/it] 86%|████████▌ | 429/500 [1:39:42<16:25, 13.88s/it] 86%|████████▌ | 430/500 [1:39:54<15:43, 13.48s/it]                                                    86%|████████▌ | 430/500 [1:39:54<15:43, 13.48s/it] 86%|████████▌ | 431/500 [1:40:14<17:40, 15.37s/it] 86%|████████▋ | 432/500 [1:40:30<17:25, 15.37s/it] 87%|████████▋ | 433/500 [1:40:42<16:06, 14.42s/it] 87%|████████▋ | 434/500 [1:40:56<15:44, 14.31s/it] 87%|████████▋ | 435/500 [1:41:11<15:40, 14.47s/it] 87%|████████▋ | 436/500 [1:41:23<14:49, 13.91s/it] 87%|████████▋ | 437/500 [1:41:40<15:36, 14.87s/it] 88%|████████▊ | 438/500 [1:41:54<15:05, 14.61s/it] 88%|█████{'loss': 0.0443, 'grad_norm': 0.3441956639289856, 'learning_rate': 3.728938517864794e-06, 'epoch': 1.76}
+{'loss': 0.0468, 'grad_norm': 0.3156636655330658, 'learning_rate': 2.5995410021864787e-06, 'epoch': 1.8}
+███▊ | 439/500 [1:42:08<14:26, 14.20s/it] 88%|████████▊ | 440/500 [1:42:22<14:21, 14.36s/it]                                                    88%|████████▊ | 440/500 [1:42:22<14:21, 14.36s/it] 88%|████████▊ | 441/500 [1:42:37<14:12, 14.46s/it] 88%|████████▊ | 442/500 [1:42:50<13:39, 14.13s/it] 89%|████████▊ | 443/500 [1:43:03<12:51, 13.54s/it] 89%|████████▉ | 444/500 [1:43:20<13:36, 14.58s/it] 89%|████████▉ | 445/500 [1:43:33<12:56, 14.11s/it] 89%|████████▉ | 446/500 [1:43:45<12:20, 13.72s/it] 89%|████████▉ | 447/500 [1:43:58<11:48, 13.37s/it] 90%|████████▉ | 448/500 [1:44:13<11:54, 13.73s/it] 90%|████████▉ | 449/500 [1:44:29<12:19, 14.51s/it] 90%|█████████ | 450/500 [1:44:42<11:51, 14.23s/it]                                                    90%|███████�{'loss': 0.0418, 'grad_norm': 1.3855658769607544, 'learning_rate': 1.6689574843694433e-06, 'epoch': 1.84}
+�█ | 450/500 [1:44:42<11:51, 14.23s/it] 90%|█████████ | 451/500 [1:44:55<11:10, 13.68s/it] 90%|█████████ | 452/500 [1:45:10<11:14, 14.06s/it] 91%|█████████ | 453/500 [1:45:23<10:55, 13.95s/it] 91%|█████████ | 454/500 [1:45:37<10:39, 13.91s/it] 91%|█████████ | 455/500 [1:45:49<10:01, 13.37s/it] 91%|█████████ | 456/500 [1:46:02<09:33, 13.04s/it] 91%|█████████▏| 457/500 [1:46:16<09:39, 13.49s/it] 92%|█████████▏| 458/500 [1:46:32<09:50, 14.07s/it] 92%|█████████▏| 459/500 [1:46:46<09:46, 14.30s/it] 92%|█████████▏| 460/500 [1:46:58<08:53, 13.33s/it]                                                    92%|█████████▏| 460/500 [1:46:58<08:53, 13.33s/it] 92%|█████████▏| 461/500 [1:47:11<08:41, 13.37s/it] 92%|█████████▏| 462/500 [1:47:27<08:53, 14.04s/it] 93%|{'loss': 0.0387, 'grad_norm': 0.4540841579437256, 'learning_rate': 9.410911550880475e-07, 'epoch': 1.88}
+█████████▎| 463/500 [1:47:40<08:29, 13.77s/it] 93%|█████████▎| 464/500 [1:47:54<08:25, 14.04s/it] 93%|█████████▎| 465/500 [1:48:08<08:05, 13.87s/it] 93%|█████████▎| 466/500 [1:48:23<08:04, 14.24s/it] 93%|█████████▎| 467/500 [1:48:37<07:51, 14.30s/it] 94%|█████████▎| 468/500 [1:48:49<07:15, 13.60s/it] 94%|█████████▍| 469/500 [1:49:11<08:13, 15.93s/it] 94%|█████████▍| 470/500 [1:49:23<07:25, 14.86s/it]                                                    94%|█████████▍| 470/500 [1:49:23<07:25, 14.86s/it] 94%|█████████▍| 471/500 [1:49:35<06:45, 13.98s/it] 94%|█████████▍| 472/500 [1:49:52<06:58, 14.95s/it] 95%|█████████▍| 473/500 [1:50:10<07:04, 15.74s/it] 95%|█████████▍| 474/500 [1:50:25<06:44, 15.55s/it] 95%|█████████▌| 475{'loss': 0.0449, 'grad_norm': 0.9560657143592834, 'learning_rate': 4.189949386787462e-07, 'epoch': 1.92}
+/500 [1:50:38<06:11, 14.84s/it] 95%|█████████▌| 476/500 [1:50:51<05:42, 14.27s/it] 95%|█████████▌| 477/500 [1:51:07<05:41, 14.85s/it] 96%|█████████▌| 478/500 [1:51:19<05:07, 13.97s/it] 96%|█████████▌| 479/500 [1:51:30<04:34, 13.06s/it] 96%|█████████▌| 480/500 [1:51:44<04:24, 13.23s/it]                                                    96%|█████████▌| 480/500 [1:51:44<04:24, 13.23s/it] 96%|█████████▌| 481/500 [1:51:55<04:01, 12.69s/it] 96%|█████████▋| 482/500 [1:52:09<03:55, 13.09s/it] 97%|█████████▋| 483/500 [1:52:23<03:44, 13.21s/it] 97%|█████████▋| 484/500 [1:52:38<03:42, 13.90s/it] 97%|█████████▋| 485/500 [1:52:51<03:25, 13.70s/it] 97%|█████████▋| 486/500 [1:53:03<03:02, 13.03s/it] 97%|█████████▋| 487/500 [1:53:19<03:01, 14.00s/it] 98{'loss': 0.0415, 'grad_norm': 0.5556914210319519, 'learning_rate': 1.0485868811441757e-07, 'epoch': 1.96}
+%|█████████▊| 488/500 [1:53:31<02:41, 13.47s/it] 98%|█████████▊| 489/500 [1:53:46<02:32, 13.90s/it] 98%|█████████▊| 490/500 [1:54:02<02:25, 14.50s/it]                                                    98%|█████████▊| 490/500 [1:54:02<02:25, 14.50s/it] 98%|█████████▊| 491/500 [1:54:17<02:10, 14.53s/it] 98%|█████████▊| 492/500 [1:54:34<02:02, 15.26s/it] 99%|█████████▊| 493/500 [1:54:49<01:45, 15.10s/it] 99%|█████████▉| 494/500 [1:55:04<01:30, 15.08s/it] 99%|█████████▉| 495/500 [1:55:16<01:11, 14.35s/it] 99%|█████████▉| 496/500 [1:55:29<00:54, 13.75s/it] 99%|█████████▉| 497/500 [1:55:43<00:41, 13.84s/it]100%|█████████▉| 498/500 [1:55:55<00:26, 13.30s/it]100%|█████████▉| 499/500 [1:56:09<00:13, 13.67s/it]100%|██████████| 5{'loss': 0.0382, 'grad_norm': 1.1138899326324463, 'learning_rate': 0.0, 'epoch': 2.0}
+00/500 [1:56:21<00:00, 13.18s/it]                                                   100%|██████████| 500/500 [1:56:21<00:00, 13.18s/it][INFO|trainer.py:3705] 2024-10-16 05:03:02,103 >> Saving model checkpoint to saves/qwen2_vl_7b/v2/checkpoint-500
+[INFO|configuration_utils.py:672] 2024-10-16 05:03:02,523 >> loading configuration file config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/config.json
+[WARNING|modeling_rope_utils.py:379] 2024-10-16 05:03:02,523 >> Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+[INFO|configuration_utils.py:739] 2024-10-16 05:03:02,525 >> Model config Qwen2VLConfig {
+  "architectures": [
+    "Qwen2VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 28,
+  "model_type": "qwen2_vl",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.45.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "in_chans": 3,
+    "model_type": "qwen2_vl",
+    "spatial_patch_size": 14
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 152064
+}
+
+[INFO|tokenization_utils_base.py:2649] 2024-10-16 05:03:04,453 >> tokenizer config file saved in saves/qwen2_vl_7b/v2/checkpoint-500/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2658] 2024-10-16 05:03:04,456 >> Special tokens file saved in saves/qwen2_vl_7b/v2/checkpoint-500/special_tokens_map.json
+[2024-10-16 05:03:05,218] [INFO] [logging.py:96:log_dist] [Rank 0] [Torch] Checkpoint global_step500 is about to be saved!
+[2024-10-16 05:03:05,302] [INFO] [logging.py:96:log_dist] [Rank 0] Saving model checkpoint: saves/qwen2_vl_7b/v2/checkpoint-500/global_step500/mp_rank_00_model_states.pt
+[2024-10-16 05:03:05,302] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving saves/qwen2_vl_7b/v2/checkpoint-500/global_step500/mp_rank_00_model_states.pt...
+[2024-10-16 05:03:08,100] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved saves/qwen2_vl_7b/v2/checkpoint-500/global_step500/mp_rank_00_model_states.pt.
+[2024-10-16 05:03:08,105] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving saves/qwen2_vl_7b/v2/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt...
+[2024-10-16 05:03:08,106] [INFO] [torch_checkpoint_engine.py:21:save] [Torch] Saving saves/qwen2_vl_7b/v2/checkpoint-500/global_step500/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt...
+[2024-10-16 05:03:14,879] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved saves/qwen2_vl_7b/v2/checkpoint-500/global_step500/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt.
+[2024-10-16 05:03:14,879] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved saves/qwen2_vl_7b/v2/checkpoint-500/global_step500/bf16_zero_pp_rank_1_mp_rank_00_optim_states.pt
+[2024-10-16 05:03:14,879] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step500 is ready now!
+[2024-10-16 05:03:17,156] [INFO] [torch_checkpoint_engine.py:23:save] [Torch] Saved saves/qwen2_vl_7b/v2/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt.
+[2024-10-16 05:03:17,201] [INFO] [engine.py:3478:_save_zero_checkpoint] bf16_zero checkpoint saved saves/qwen2_vl_7b/v2/checkpoint-500/global_step500/bf16_zero_pp_rank_0_mp_rank_00_optim_states.pt
+[2024-10-16 05:03:17,201] [INFO] [torch_checkpoint_engine.py:33:commit] [Torch] Checkpoint global_step500 is ready now!
+[INFO|trainer.py:2505] 2024-10-16 05:03:17,220 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+[INFO|image_processing_base.py:258] 2024-10-16 05:03:17,226 >> Image processor saved in saves/qwen2_vl_7b/v2/checkpoint-500/preprocessor_config.json
+[INFO|trainer.py:2505] 2024-10-16 05:03:17,226 >> 
+
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+{'train_runtime': 7000.8303, 'train_samples_per_second': 1.143, 'train_steps_per_second': 0.071, 'train_loss': 0.06536492753028869, 'epoch': 2.0}
+                                                   100%|██████████| 500/500 [1:56:40<00:00, 13.18s/it]100%|██████████| 500/500 [1:56:40<00:00, 14.00s/it]
+[INFO|image_processing_base.py:258] 2024-10-16 05:03:17,267 >> Image processor saved in saves/qwen2_vl_7b/v2/preprocessor_config.json
+[INFO|trainer.py:3705] 2024-10-16 05:03:20,431 >> Saving model checkpoint to saves/qwen2_vl_7b/v2
+[INFO|configuration_utils.py:672] 2024-10-16 05:03:20,737 >> loading configuration file config.json from cache at /fsx/ubuntu/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/51c47430f97dd7c74aa1fa6825e68a813478097f/config.json
+[WARNING|modeling_rope_utils.py:379] 2024-10-16 05:03:20,738 >> Unrecognized keys in `rope_scaling` for 'rope_type'='default': {'mrope_section'}
+[INFO|configuration_utils.py:739] 2024-10-16 05:03:20,739 >> Model config Qwen2VLConfig {
+  "architectures": [
+    "Qwen2VLForConditionalGeneration"
+  ],
+  "attention_dropout": 0.0,
+  "bos_token_id": 151643,
+  "eos_token_id": 151645,
+  "hidden_act": "silu",
+  "hidden_size": 3584,
+  "image_token_id": 151655,
+  "initializer_range": 0.02,
+  "intermediate_size": 18944,
+  "max_position_embeddings": 32768,
+  "max_window_layers": 28,
+  "model_type": "qwen2_vl",
+  "num_attention_heads": 28,
+  "num_hidden_layers": 28,
+  "num_key_value_heads": 4,
+  "rms_norm_eps": 1e-06,
+  "rope_scaling": {
+    "mrope_section": [
+      16,
+      24,
+      24
+    ],
+    "rope_type": "default",
+    "type": "default"
+  },
+  "rope_theta": 1000000.0,
+  "sliding_window": 32768,
+  "tie_word_embeddings": false,
+  "torch_dtype": "bfloat16",
+  "transformers_version": "4.45.0",
+  "use_cache": true,
+  "use_sliding_window": false,
+  "video_token_id": 151656,
+  "vision_config": {
+    "in_chans": 3,
+    "model_type": "qwen2_vl",
+    "spatial_patch_size": 14
+  },
+  "vision_end_token_id": 151653,
+  "vision_start_token_id": 151652,
+  "vision_token_id": 151654,
+  "vocab_size": 152064
+}
+
+[INFO|tokenization_utils_base.py:2649] 2024-10-16 05:03:29,583 >> tokenizer config file saved in saves/qwen2_vl_7b/v2/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2658] 2024-10-16 05:03:29,822 >> Special tokens file saved in saves/qwen2_vl_7b/v2/special_tokens_map.json
+***** train metrics *****
+  epoch                    =         2.0
+  total_flos               = 349938581GF
+  train_loss               =      0.0654
+  train_runtime            =  1:56:40.83
+  train_samples_per_second =       1.143
+  train_steps_per_second   =       0.071
+Figure saved at: saves/qwen2_vl_7b/v2/training_loss.png
+10/16/2024 05:03:32 - WARNING - llamafactory.extras.ploting - No metric eval_loss to plot.
+10/16/2024 05:03:32 - WARNING - llamafactory.extras.ploting - No metric eval_accuracy to plot.
+[INFO|modelcard.py:449] 2024-10-16 05:03:32,812 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Causal Language Modeling', 'type': 'text-generation'}}
+END TIME: Wed Oct 16 05:03:43 UTC 2024

@@ -1,0 +1,31 @@
+{
+    "ClusterName": "ml-cluster",
+    "InstanceGroups": [
+      {
+        "InstanceGroupName": "controller-machine",
+        "InstanceType": "ml.m5.2xlarge",
+        "InstanceCount": 1,
+        "LifeCycleConfig": {
+          "SourceS3Uri": "s3://your-sagemaker-lifecycle-bucket/src",
+          "OnCreate": "on_create.sh"
+        },
+        "ExecutionRole": "arn:aws:iam::7076********:role/sagemaker-hyperpod-AmazonSagemakerClusterExecutionRole",
+        "ThreadsPerCore": 1
+      },
+      {
+        "InstanceGroupName": "worker-group-1",
+        "InstanceType": "ml.g5.2xlarge",
+        "InstanceCount": 4,
+        "LifeCycleConfig": {
+          "SourceS3Uri": "s3://your-sagemaker-lifecycle-bucket",
+          "OnCreate": "on_create.sh"
+        },
+        "ExecutionRole": "arn:aws:iam::7076********:role/sagemaker-hyperpod-AmazonSagemakerClusterExecutionRole",
+        "ThreadsPerCore": 1
+      }
+    ],
+    "VpcConfig": {
+      "SecurityGroupIds": ["sg-000***********"],
+      "Subnets":["subnet-004***********"]
+    }
+}

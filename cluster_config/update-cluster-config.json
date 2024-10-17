@@ -1,0 +1,24 @@
+ [
+    {
+      "InstanceGroupName": "controller-machine",
+      "InstanceType": "ml.m5.2xlarge",
+      "InstanceCount": 1,
+      "LifeCycleConfig": {
+        "SourceS3Uri": "s3://sagemaker-lifecycle-b4d30f60/src",
+        "OnCreate": "on_create.sh"
+      },
+      "ExecutionRole": "arn:aws:iam::707684582322:role/sagemaker-hyperpod-AmazonSagemakerClusterExecutionR-ZyqhkpLeyaBq",
+      "ThreadsPerCore": 1
+    },
+    {
+      "InstanceGroupName": "worker-group-1",
+      "InstanceType": "ml.g5.24xlarge",
+      "InstanceCount": 2,
+      "LifeCycleConfig": {
+        "SourceS3Uri": "s3://sagemaker-lifecycle-b4d30f60/src",
+        "OnCreate": "on_create.sh"
+      },
+      "ExecutionRole": "arn:aws:iam::707684582322:role/sagemaker-hyperpod-AmazonSagemakerClusterExecutionR-ZyqhkpLeyaBq",
+      "ThreadsPerCore": 1
+    }
+]

@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "workload_manager": "slurm",
+  "controller_group": "controller-machine",
+  "worker_groups": [
+    {
+      "instance_group_name": "worker-group-1",
+      "partition_name": "ml.g5.2xlarge"
+    }
+  ],
+  "fsx_dns_name": "fs-0e1***********.fsx.us-west-2.amazonaws.com",
+  "fsx_mountname": "5w*******"
+}
