@@ -98,6 +98,8 @@ conda create -n llamafactory python=3.10
 conda activate llamafactory
 ```
 ```
+git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
+cd LLaMA-Factory
 pip install -e ".[torch,metrics,deepspeed,bitsandbytes,liger-kernel]" "transformers>=0.45.0"
 pip install flash-attn
 ```
