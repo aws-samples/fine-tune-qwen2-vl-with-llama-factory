@@ -15,7 +15,7 @@ lora_target: all
 lora_rank: 128
 lora_dropout: 0.0
 
-deepspeed: examples/deepspeed/ds_z0_config.json
+deepspeed: train_configs/deepspeed/ds_z0_config.json
 flash_attn: fa2
 enable_liger_kernel: true
 

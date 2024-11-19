@@ -99,14 +99,15 @@ chmod +x Miniconda3-latest-Linux-x86_64.sh
 source ~/miniconda3/bin/activate
 ```
 
-### Create environment on worker node (g5.2xlarge)
+### Create environment on worker node (i.e. g5.2xlarge)
 ```
-conda create -n llamafactory python=3.10 
+conda create -n llamafactory python=3.10
 conda activate llamafactory
 ```
 ```
 git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
+pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu121
 pip install -e ".[torch,metrics,deepspeed,bitsandbytes,liger-kernel]" "transformers>=0.45.0"
 pip install flash-attn
 cd ..
@@ -117,7 +118,7 @@ clone the current repository and cd into repo
 ```
 git clone https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory.git
 cd fine-tune-qwen2-vl-with-llama-factory
-pip install -r requirements.txt
+#pip install -r requirements.txt
 python ./preprocessing/process_fintabnet_en.py --output_dir ./data/fintabnet_en
 ```
 
@@ -127,17 +128,17 @@ Add pubtabnet format in `./data/dataset_info.json` (added fintabnet_en with this
 PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models. PiSSA shares the same architecture as LoRA. However compared to LoRA, PiSSA updates the principal components while freezing the "residual" parts, allowing faster convergence and enhanced performance.
 
 ```bash
-python ./train_configs/pissa_init.py --model_name_or_path Qwen/Qwen2-VL-7B-Instruct --output_dir models/qwen2_vl_7b_pissa_128 --lora_rank 128 --lora_target "^(?\!.*patch_embed).*(?:gate_proj|k_proj|fc2|o_proj|v_proj|up_proj|fc1|proj|down_proj|qkv|q_proj).*"
+python ./train_configs/pissa_init.py --model_name_or_path Qwen/Qwen2-VL-7B-Instruct --output_dir models/qwen2_vl_7b_pissa_128 --lora_rank 128 --lora_target $'^(?!.*patch_embed).*(?:gate_proj|k_proj|fc2|o_proj|v_proj|up_proj|fc1|proj|down_proj|qkv|q_proj).*'
 ```
 
 ### Start the training job
 
-Prepare training config `./train_configs/qwen2_vl_7b_sft_cfg.yaml`
+Prepare training config `./train_configs/train/qwen2_vl_7b_pissa_qlora_128_fintabnet_en.yaml`
 
 #### Supervised Fine-Tuning on Single Node
 
 ```
-FORCE_TORCHRUN=1 llamafactory-cli train ./train_configs/qwen2_vl_7b_sft_cfg.yaml
+FORCE_TORCHRUN=1 llamafactory-cli train ./train_configs/train/qwen2_vl_7b_pissa_qlora_128_fintabnet_en.yaml
 ```
 
 or use the Slurm sbatch. Example script here `./submit_train_singlenode.sh` for single node single GPU i.e. g5.2xlarge 

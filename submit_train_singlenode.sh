@@ -15,4 +15,4 @@ conda activate llamafactory
 
 export FORCE_TORCHRUN=1
 
-srun --export=ALL llamafactory-cli train ./train_configs/qwen2_vl_7b_sft_cfg.yaml
+srun --export=ALL llamafactory-cli train ./train_configs/train/qwen2_vl_7b_pissa_qlora_128_fintabnet_en.yaml
