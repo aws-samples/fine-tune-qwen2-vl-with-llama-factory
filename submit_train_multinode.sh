@@ -31,6 +31,6 @@ export FORCE_TORCHRUN=1
 # Run the command on each node
 srun --ntasks=$NNODES --ntasks-per-node=1 \
     bash -c "FORCE_TORCHRUN=1 NNODES=$NNODES RANK=\$SLURM_PROCID MASTER_ADDR=$MASTER_ADDR MASTER_PORT=$MASTER_PORT \
-    llamafactory-cli train ./train_configs/qwen2_vl_7b_sft_cfg.yaml"
+    llamafactory-cli train ./train_configs/train/qwen2_vl_7b_pissa_qlora_128_fintabnet_en.yaml"
 
 echo "END TIME: $(date)"
