@@ -198,8 +198,7 @@ python ./evaluation/calc_teds.py ./logs/$YOUR_TXT_PATH
 
 ## Hosting
 
-You can either host fine-tuned Qwen2 VL model on SageMaker real-time endpoint, or use directly vLLM docker on your perferred environment such as EKS. You can check the deployment guidance [here](https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory/blob/main/hosting_vllm/README.md
-)
+You can either host fine-tuned Qwen2 VL model on SageMaker real-time endpoint, or use directly vLLM docker on your perferred environment such as EKS. You can check the [deployment guidance here](https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory/tree/main/hosting_vllm)
 
 ## Security
 
