@@ -1,0 +1,50 @@
+# python scripts/pissa_init.py --model_name_or_path Qwen/Qwen2-VL-7B-Instruct --output_dir models/qwen2_vl_7b_pissa_128 --lora_rank 128 --lora_target "^(?\!.*patch_embed).*(?:gate_proj|k_proj|fc2|o_proj|v_proj|up_proj|fc1|proj|down_proj|qkv|q_proj).*"
+
+### model
+model_name_or_path: models/qwen2_vl_7b_pissa_128
+adapter_name_or_path: models/qwen2_vl_7b_pissa_128/pissa_init
+quantization_bit: 4
+quantization_method: bitsandbytes
+
+### method
+stage: sft
+do_train: true
+freeze_vision_tower: false
+finetuning_type: lora
+lora_target: all
+lora_rank: 128
+lora_dropout: 0.0
+
+deepspeed: examples/deepspeed/ds_z0_config.json
+flash_attn: fa2
+enable_liger_kernel: true
+
+### dataset
+dataset: fintabnet_en
+template: qwen2_vl
+cutoff_len: 8192
+overwrite_cache: true
+preprocessing_num_workers: 16
+# max_samples: 10000
+
+### output
+output_dir: saves/qwen2_vl_7b_pissa_qlora_128_fintabnet_en
+logging_steps: 10
+save_steps: 1000
+plot_loss: true
+overwrite_output_dir: true
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8
+learning_rate: 1.0e-5
+num_train_epochs: 1.0
+lr_scheduler_type: cosine
+warmup_ratio: 0.03
+bf16: true
+ddp_timeout: 180000000
+# report_to: wandb
+run_name: qwen2_vl_7b_pissa_qlora_128_fintabnet_en
+
+### eval
+eval_strategy: 'no'

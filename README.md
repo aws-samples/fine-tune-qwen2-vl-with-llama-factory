@@ -105,14 +105,20 @@ pip install flash-attn
 ```
 
 ### Start the data pre-processing
-copy the  `process_data.py` file into LLaMA-Factory and execute
-
+clone the current repository and cd into repo 
 ```
-cd LLaMA-Factory
-python process_data.py --output_dir ./data/pubtabnet
+cd fine-tune-qwen2-vl-with-llama-factory
+python ./preprocessing/process_fintabnet_en.py --output_dir ./data/fintabnet_en
 ```
 
-Add pubtabnet format in `./data/dataset_info.json`
+Add pubtabnet format in `./data/dataset_info.json` (added fintabnet_en with this sample code)
+
+### Prepare PiSSA Qwen2-VL Model
+PiSSA: Principal Singular Values and Singular Vectors Adaptation of Large Language Models. PiSSA shares the same architecture as LoRA. However compared to LoRA, PiSSA updates the principal components while freezing the "residual" parts, allowing faster convergence and enhanced performance.
+
+```bash
+python ./train_configs/pissa_init.py --model_name_or_path Qwen/Qwen2-VL-7B-Instruct --output_dir models/qwen2_vl_7b_pissa_128 --lora_rank 128 --lora_target "^(?\!.*patch_embed).*(?:gate_proj|k_proj|fc2|o_proj|v_proj|up_proj|fc1|proj|down_proj|qkv|q_proj).*"
+```
 
 ### Start the training job
 
