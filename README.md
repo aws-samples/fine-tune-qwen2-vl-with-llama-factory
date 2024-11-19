@@ -155,24 +155,48 @@ sbatch submit_train_multinode.sh
 ```
 
 
-###  Merge LoRA
+### Export Models with merge LoRA 
 
-Example `./lora_merge_configs/qwen2vl_lora_sft.yaml`
+```bash
+llamafactory-cli export ./train_configs/export/export_qwen2_vl_7b_pissa_qlora_128_fintabnet_en.yaml
+```
+
+Example `./train_configs/export/export_qwen2_vl_7b_pissa_qlora_128_fintabnet_en.yaml`
 
 1. Modify the adapter_name_or_path  to your target lora folder path
 2. Modify the output directory export_dir  to your target output folder path
 
-```
-llamafactory-cli export ./lora_merge_configs/qwen2vl_lora_sft.yaml  
+### [Optional] Quantization with AutoAWQ
+
+AutoAWQ is an easy-to-use package for 4-bit quantized models. AutoAWQ speeds up models by 3x and reduces memory requirements by 3x compared to FP16. AutoAWQ implements the Activation-aware Weight Quantization (AWQ) algorithm for quantizing LLMs.
+
+```bash
+cd ..
+git clone https://github.com/kq-chen/AutoAWQ.git
+cd AutoAWQ
+pip install numpy gekko pandas
+pip install -e .
 ```
 
-###  Evaluation using Hugging Face library 
+```bash
+CUDA_VISIBLE_DEVICES=0 python ./quantization/quant_awq.py --model_path ./models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en --quant_path ./models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en_awq_int4 --jsonl_file ./data/fintabnet_en/fintabnet.json --n_sample 16
+```
 
-You can process the testing data and run the evaluation 
+### Evaluation
+
+#### Step 1. Inference
+
+```bash
+python ./evaluation/inference.py --log-path ./logs --model-name qwen2_vl --model-path models/$YOUR_MODEL_PATH
 ```
-cd qwen2vl_evaluation
-python qwen2vl_evaluation.py
+
+#### Step 2. Scoring
+
+```bash
+python ./evaluation/calc_teds.py ./logs/$YOUR_TXT_PATH
 ```
+
+
 
 ## Security
 
