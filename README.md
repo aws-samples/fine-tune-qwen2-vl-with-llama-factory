@@ -83,6 +83,13 @@ https://catalog.workshops.aws/sagemaker-hyperpod/en-US/05-advanced/05-vs-code
 
 ## Training and evaluation
 
+All the following steps will be executed on GPUs nodes i.e. 2 * g5.2xlarge, you can ssh into worker node https://catalog.workshops.aws/sagemaker-hyperpod/en-US/01-cluster/07-ssh-compute 
+
+```
+sinfo 
+ssh ip-10-1-23-***
+```
+
 
 ### Miniconda install 
 ```
@@ -102,12 +109,15 @@ git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install -e ".[torch,metrics,deepspeed,bitsandbytes,liger-kernel]" "transformers>=0.45.0"
 pip install flash-attn
+cd ..
 ```
 
 ### Start the data pre-processing
 clone the current repository and cd into repo 
 ```
+git clone https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory.git
 cd fine-tune-qwen2-vl-with-llama-factory
+pip install -r requirements.txt
 python ./preprocessing/process_fintabnet_en.py --output_dir ./data/fintabnet_en
 ```
 

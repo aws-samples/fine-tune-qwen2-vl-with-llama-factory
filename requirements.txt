@@ -3,9 +3,12 @@ apted
 boto3
 datasets
 distance
+flash-attn
 lxml
 optimum
 pillow
 qwen-vl-utils
+torch
 torchvision
 tqdm
+transformers
