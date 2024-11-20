@@ -4,7 +4,7 @@ import torch
 
 LOCAL_MODEL_PATH = './models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en'
 HuggingFace_MODEL_PATH = 'Qwen/Qwen2-VL-7B-Instruct'
-IMAGE_PATHS = ["./data/fintabnet/images/0.jpg", "./data/fintabnet/images/1.jpg"]  # Add more image paths
+IMAGE_PATHS = ["./data/fintabnet_en/images/0.jpg", "./data/fintabnet_en/images/1.jpg"]  # Add more image paths
 
 
 model = Qwen2VLForConditionalGeneration.from_pretrained(
