@@ -153,18 +153,22 @@ use the Slurm sbatch. Example script here `./submit_train_multinode.sh` for 2 no
 ```
 sbatch submit_train_multinode.sh 
 ```
+After completing a model training process, you'll get a file called `finetune_output_multinode.log`. This is a log file that records all the details and progress of your training session ([example here]()).
+
 
 
 ### Export Models with merge LoRA 
-
-```bash
-llamafactory-cli export ./train_configs/export/export_qwen2_vl_7b_pissa_qlora_128_fintabnet_en.yaml
-```
 
 Example `./train_configs/export/export_qwen2_vl_7b_pissa_qlora_128_fintabnet_en.yaml`
 
 1. Modify the adapter_name_or_path  to your target lora folder path
 2. Modify the output directory export_dir  to your target output folder path
+
+
+```bash
+llamafactory-cli export ./train_configs/export/export_qwen2_vl_7b_pissa_qlora_128_fintabnet_en.yaml
+```
+
 
 ### [Optional] Quantization with AutoAWQ
 
