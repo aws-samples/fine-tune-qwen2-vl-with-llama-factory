@@ -188,9 +188,21 @@ CUDA_VISIBLE_DEVICES=0 python ./quantization/quant_awq.py --model_path ./models/
 
 ### Evaluation
 
+Run `./evaluation/qwen2vl_visual_evaluation.py` to evaluate the merged model's performance. The model generates HTML output that enables side-by-side comparison between the model's predictions and reference tables, making it easy to visually assess the accuracy of table structure recognition and content extraction through an interactive interface.
+
+```bash
+pip install qwen_vl_utils
+python ./evaluation/qwen2vl_visual_evaluation.py 
+```
+
+
+The model's performance is then evaluated using the [financial-statement-table-html](https://huggingface.co/datasets/apoidea/financial-statement-table-html) dataset, which provides standardized metrics for assessing table structure recognition and content extraction accuracy in financial statements.
+
+
 #### Step 1. Inference
 
 ```bash
+pip install qwen_vl_utils
 python ./evaluation/inference.py --log-path ./logs --model-name qwen2_vl --model-path models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en
 ```
 

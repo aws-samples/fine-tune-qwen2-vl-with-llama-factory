@@ -31,7 +31,7 @@ class Qwen2VL(nn.Module):
     def forward(self,
                 prompt,
                 image_base64,
-                max_new_tokens=4096,
+                max_new_tokens=1028,
                 repetition_penalty=1.05,
                 do_sample=False,
                 temperature=0.0):
