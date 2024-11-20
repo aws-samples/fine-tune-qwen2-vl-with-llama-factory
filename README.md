@@ -215,6 +215,14 @@ CUDA_VISIBLE_DEVICES=0,1,2,3 python ./quantization/quant_awq.py --model_path ./m
 
 You can either host fine-tuned Qwen2 VL model on SageMaker real-time endpoint, or use directly vLLM docker on your perferred environment such as EKS. You can check the [deployment guidance here](https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory/tree/main/hosting_vllm)
 
+
+## Special Thanks & Contributors
+
+Zhihao Lin, from AWS Generative AI Innovation Center, conducted extensive experimentation with generative AI models, focusing on optimizing model performance and resource utilization.
+
+
+
+
 ## Security
 
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
