@@ -176,7 +176,7 @@ AutoAWQ is an easy-to-use package for 4-bit quantized models. AutoAWQ speeds up 
 
 ```bash
 cd ..
-git clone https://github.com/kq-chen/AutoAWQ.git
+pip install autoawq
 cd AutoAWQ
 pip install numpy gekko pandas
 pip install -e .
@@ -198,6 +198,7 @@ python ./evaluation/qwen2vl_visual_evaluation.py
 
 The model's performance is then evaluated using the [financial-statement-table-html](https://huggingface.co/datasets/apoidea/financial-statement-table-html) dataset, which provides standardized metrics for assessing table structure recognition and content extraction accuracy in financial statements.
 
+If you suffer from the torch.OutOfMemoryError, you can go to the step Quantization with AutoAWQ
 
 #### Step 1. Inference
 

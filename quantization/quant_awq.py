@@ -1,9 +1,9 @@
 import argparse
 import json
 
-from awq.models.qwen2vl import Qwen2VLAWQForConditionalGeneration
+from awq.models.qwen2vl import Qwen2VLAWQForCausalLM
 from qwen_vl_utils import process_vision_info
-from transformers import Qwen2VLProcessor
+from transformers import AutoProcessor
 
 
 def prepare_dataset(file_path: str, n_sample: int = 8) -> list[list[dict]]:
@@ -38,43 +38,11 @@ def prepare_dataset(file_path: str, n_sample: int = 8) -> list[list[dict]]:
 
 def main(args):
     # Load your processor and model with AutoAWQ
-    processor = Qwen2VLProcessor.from_pretrained(args.model_path)
-
-    device_map = {
-        'visual': 0,
-        'model.embed_tokens': 0,
-        'model.rotary_emb': 0,
-        'model.layers.0': 0,
-        'model.layers.1': 1,
-        'model.layers.2': 1,
-        'model.layers.3': 1,
-        'model.layers.4': 2,
-        'model.layers.5': 2,
-        'model.layers.6': 2,
-        'model.layers.7': 2,
-        'model.layers.8': 2,
-        'model.layers.9': 3,
-        'model.layers.10': 3,
-        'model.layers.11': 3,
-        'model.layers.12': 3,
-        'model.layers.13': 4,
-        'model.layers.14': 4,
-        'model.layers.15': 4,
-        'model.layers.16': 4,
-        'model.layers.17': 5,
-        'model.layers.18': 5,
-        'model.layers.19': 5,
-        'model.layers.20': 5,
-        'model.layers.21': 6,
-        'model.layers.22': 6,
-        'model.layers.23': 6,
-        'model.layers.24': 6,
-        'model.layers.25': 7,
-        'model.layers.26': 7,
-        'model.layers.27': 7,
-        'model.norm': 7,
-        'lm_head': 7,
-    }
+    processor = AutoProcessor.from_pretrained(args.model_path,
+                                              chat_template=("{% set image_count = namespace(value=0) %}{% set video_count = namespace(value=0) %}{% for message in messages %}{% if loop.first and message['role'] != 'system' %}<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n{% endif %}<|im_start|>{{ message['role'] }}\n{% if message['content'] is string %}{{ message['content'] }}<|im_end|>\n{% else %}{% for content in message['content'] %}{% if content['type'] == 'image' or 'image' in content or 'image_url' in content %}{% set image_count.value = image_count.value + 1 %}{% if add_vision_id %}Picture {{ image_count.value }}: {% endif %}<|vision_start|><|image_pad|><|vision_end|>{% elif content['type'] == 'video' or 'video' in content %}{% set video_count.value = video_count.value + 1 %}{% if add_vision_id %}Video {{ video_count.value }}: {% endif %}<|vision_start|><|video_pad|><|vision_end|>{% elif 'text' in content %}{{ content['text'] }}{% endif %}{% endfor %}<|im_end|>\n{% endif %}{% endfor %}{% if add_generation_prompt %}<|im_start|>assistant\n{% endif %}" 
+                                                            )
+                                            )
+    device_map = "auto"
     model = Qwen2VLAWQForConditionalGeneration.from_pretrained(
         args.model_path,
         model_type='qwen2_vl',
