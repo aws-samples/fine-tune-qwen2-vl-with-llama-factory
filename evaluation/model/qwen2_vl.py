@@ -1,14 +1,14 @@
 import torch.nn as nn
 from qwen_vl_utils import process_vision_info
 from transformers import AutoProcessor, Qwen2VLForConditionalGeneration
-
+import torch 
 
 class Qwen2VL(nn.Module):
 
     def __init__(self,
                  model_path='Qwen/Qwen2-VL-7B-Instruct',
                  device_map='auto',
-                 torch_dtype='auto',
+                 torch_dtype = torch.bfloat16,
                  use_flash_attention_2=True):
         super().__init__()
         if use_flash_attention_2:

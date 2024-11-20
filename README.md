@@ -153,7 +153,7 @@ use the Slurm sbatch. Example script here `./submit_train_multinode.sh` for 2 no
 ```
 sbatch submit_train_multinode.sh 
 ```
-After completing a model training process, you'll get a file called `finetune_output_multinode.log`. This is a log file that records all the details and progress of your training session ([example here]()).
+After completing a model training process, you'll get a file called `finetune_output_multinode.log`. This is a log file that records all the details and progress of your training session ([example here](https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory/blob/main/train_configs/finetune_output_multinode.log)).
 
 
 
@@ -191,7 +191,7 @@ CUDA_VISIBLE_DEVICES=0 python ./quantization/quant_awq.py --model_path ./models/
 #### Step 1. Inference
 
 ```bash
-python ./evaluation/inference.py --log-path ./logs --model-name qwen2_vl --model-path models/$YOUR_MODEL_PATH
+python ./evaluation/inference.py --log-path ./logs --model-name qwen2_vl --model-path models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en
 ```
 
 #### Step 2. Scoring
