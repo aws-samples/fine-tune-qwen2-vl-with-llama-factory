@@ -22,16 +22,18 @@ class Qwen2VL(nn.Module):
             self.model = Qwen2VLForConditionalGeneration.from_pretrained(
                 model_path, torch_dtype=torch_dtype, device_map=device_map)
         self.model.eval()
+
+        max_pixels = 1500*1500
         self.processor = AutoProcessor.from_pretrained(
             model_path,
             chat_template=(
                 "{% set image_count = namespace(value=0) %}{% set video_count = namespace(value=0) %}{% for message in messages %}{% if loop.first and message['role'] != 'system' %}<|im_start|>system\nYou are a helpful assistant.<|im_end|>\n{% endif %}<|im_start|>{{ message['role'] }}\n{% if message['content'] is string %}{{ message['content'] }}<|im_end|>\n{% else %}{% for content in message['content'] %}{% if content['type'] == 'image' or 'image' in content or 'image_url' in content %}{% set image_count.value = image_count.value + 1 %}{% if add_vision_id %}Picture {{ image_count.value }}: {% endif %}<|vision_start|><|image_pad|><|vision_end|>{% elif content['type'] == 'video' or 'video' in content %}{% set video_count.value = video_count.value + 1 %}{% if add_vision_id %}Video {{ video_count.value }}: {% endif %}<|vision_start|><|video_pad|><|vision_end|>{% elif 'text' in content %}{{ content['text'] }}{% endif %}{% endfor %}<|im_end|>\n{% endif %}{% endfor %}{% if add_generation_prompt %}<|im_start|>assistant\n{% endif %}"  # noqa: E501
-            ))
+            ),max_pixels=max_pixels)
 
     def forward(self,
                 prompt,
                 image_base64,
-                max_new_tokens=1028,
+                max_new_tokens=4096,
                 repetition_penalty=1.05,
                 do_sample=False,
                 temperature=0.0):

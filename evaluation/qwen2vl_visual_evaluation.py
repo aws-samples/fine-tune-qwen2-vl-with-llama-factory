@@ -5,6 +5,7 @@ import torch
 LOCAL_MODEL_PATH = './models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en'
 HuggingFace_MODEL_PATH = 'Qwen/Qwen2-VL-7B-Instruct'
 IMAGE_PATHS = ["./evaluation/financial_table.png"]  # Add more image paths
+max_pixels = 1500*1500
 
 
 model = Qwen2VLForConditionalGeneration.from_pretrained(
@@ -16,7 +17,7 @@ model = Qwen2VLForConditionalGeneration.from_pretrained(
 
 
 # default processer
-processor = AutoProcessor.from_pretrained(HuggingFace_MODEL_PATH)
+processor = AutoProcessor.from_pretrained(HuggingFace_MODEL_PATH,max_pixels=max_pixels)
 
 # Prepare batch of messages
 batch_messages = []
@@ -58,7 +59,7 @@ model.eval()
 # Batch Inference
 # Batch inference: Generation of the output
 with torch.no_grad():
-    generated_ids = model.generate(**inputs, max_new_tokens=1280)
+    generated_ids = model.generate(**inputs, max_new_tokens=4096)
 
 generated_ids_trimmed = [
     out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
