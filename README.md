@@ -5,6 +5,7 @@ This repository demonstrates the fine-tuning process of the multi-modal Qwen2-VL
 
 ![Financial report](https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory/blob/main/evaluation/financial_table.png) ![Generated results](https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory/blob/main/evaluation/financial_table_html.png)
 
+<img src="./evaluation/financial_table.png" width="45%"> <img src="./evaluation/financial_table.png" width="45%">
 
 ## Cluster Creation
 
