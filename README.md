@@ -3,9 +3,7 @@
 This repository demonstrates the fine-tuning process of the multi-modal Qwen2-VL-7B model using Amazon SageMaker Hyperpod. It provides a comprehensive guide and code examples for leveraging the powerful Hyperpod infrastructure to efficiently fine-tune the Qwen2-VL-7B model, which combines vision and language capabilities. The repository includes Python scripts for the fine-tuning process and Slurm configurations for distributed training, enabling users to scale their workloads across multiple nodes. By following this guide, data scientists and machine learning engineers can harness the full potential of Qwen2-VL-7B for various multi-modal tasks while taking advantage of SageMaker Hyperpod's scalable and cost-effective distributed training capabilities. The provided scripts and configurations streamline the fine-tuning workflow, allowing users to optimize the model for their specific use cases.
 
 
-![Financial report](https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory/blob/main/evaluation/financial_table.png) ![Generated results](https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory/blob/main/evaluation/financial_table_html.png)
-
-<img src="./evaluation/financial_table.png" width="45%"> <img src="./evaluation/financial_table.png" width="45%">
+<img src="./evaluation/financial_table.png" width="41.5%"> <img src="./evaluation/financial_table_html.png" width="40%">
 
 ## Cluster Creation
 
