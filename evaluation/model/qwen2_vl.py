@@ -31,10 +31,10 @@ class Qwen2VL(nn.Module):
     def forward(self,
                 prompt,
                 image_base64,
-                max_new_tokens=8192,
+                max_new_tokens=4096,
                 repetition_penalty=1.05,
-                do_sample=True,
-                temperature=1.0):
+                #do_sample=True,
+                temperature=0.0):
         messages = [{
             'role':
             'user',
@@ -65,16 +65,19 @@ class Qwen2VL(nn.Module):
         )
         inputs = inputs.to(self.model.device)
 
-        generated_ids = self.model.generate(
-            **inputs,
-            max_new_tokens=max_new_tokens,
-            do_sample=do_sample,
-            repetition_penalty=repetition_penalty,
-            temperature=temperature)
+        with torch.no_grad():
+            generated_ids = self.model.generate(
+                **inputs,
+                max_new_tokens=max_new_tokens,
+                do_sample=do_sample,
+                repetition_penalty=repetition_penalty,
+                temperature=temperature)
+
         generated_ids_trimmed = [
             out_ids[len(in_ids):]
             for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
         ]
+        
         output_texts = self.processor.batch_decode(
             generated_ids_trimmed,
             skip_special_tokens=True,
