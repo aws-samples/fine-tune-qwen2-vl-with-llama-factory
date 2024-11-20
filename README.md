@@ -218,8 +218,7 @@ You can either host fine-tuned Qwen2 VL model on SageMaker real-time endpoint, o
 
 ## Special Thanks
 
-Zhihao Lin, from AWS Generative AI Innovation Center, conducted extensive experimentation with generative AI models, focusing on optimizing model performance and resource utilization.
-
+Zhihao LIN, from AWS Generative AI Innovation Center, conducted extensive experimentation with generative AI models, focusing on optimizing model performance and resource utilization.
 
 
 ## Security
