@@ -33,7 +33,7 @@ class Qwen2VL(nn.Module):
                 image_base64,
                 max_new_tokens=4096,
                 repetition_penalty=1.05,
-                #do_sample=True,
+                do_sample=False,
                 temperature=0.0):
         messages = [{
             'role':
@@ -69,7 +69,7 @@ class Qwen2VL(nn.Module):
             generated_ids = self.model.generate(
                 **inputs,
                 max_new_tokens=max_new_tokens,
-                #do_sample=do_sample,
+                do_sample=do_sample,
                 repetition_penalty=repetition_penalty,
                 temperature=temperature)
 
