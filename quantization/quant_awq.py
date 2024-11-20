@@ -2,6 +2,9 @@ import argparse
 import json
 
 from awq.models.qwen2vl import Qwen2VLAWQForCausalLM
+
+from awq import AutoAWQForCausalLM
+
 from qwen_vl_utils import process_vision_info
 from transformers import AutoProcessor
 from awq.quantize.quantizer import AwqQuantizer, clear_memory, get_best_device
@@ -116,13 +119,11 @@ def main(args):
                                                             ),
                                             max_pixels=max_pixels
                                             )
-    device_map = "auto"
-    model = Qwen2VLAWQForCausalLM.from_pretrained(
+
+    model = AutoAWQForCausalLM.from_pretrained(
         args.model_path,
-        model_type='qwen2_vl',
         torch_dtype=torch.bfloat16,
         use_cache=False,
-        device_map=device_map,
         attn_implementation='flash_attention_2')
 
     # Prepare dataset
