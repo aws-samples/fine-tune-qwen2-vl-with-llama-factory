@@ -206,6 +206,7 @@ python ./evaluation/calc_teds.py ./logs/$YOUR_TXT_PATH
 
 AutoAWQ is an easy-to-use package for 4-bit quantized models. AutoAWQ speeds up models by 3x and reduces memory requirements by 3x compared to FP16. AutoAWQ implements the Activation-aware Weight Quantization (AWQ) algorithm for quantizing LLMs.
 
+This might require more GPU memory. You can try `ml.g5.24xlarge` for AWQ quantization. 
 
 ```bash
 pip install autoawq 
