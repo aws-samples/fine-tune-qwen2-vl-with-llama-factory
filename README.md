@@ -173,22 +173,6 @@ llamafactory-cli export ./train_configs/export/export_qwen2_vl_7b_pissa_qlora_12
 ```
 
 
-### [Optional] Quantization with AutoAWQ
-
-AutoAWQ is an easy-to-use package for 4-bit quantized models. AutoAWQ speeds up models by 3x and reduces memory requirements by 3x compared to FP16. AutoAWQ implements the Activation-aware Weight Quantization (AWQ) algorithm for quantizing LLMs.
-
-```bash
-cd ..
-pip install autoawq
-cd AutoAWQ
-pip install numpy gekko pandas
-pip install -e .
-```
-
-```bash
-CUDA_VISIBLE_DEVICES=0 python ./quantization/quant_awq.py --model_path ./models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en --quant_path ./models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en_awq_int4 --jsonl_file ./data/fintabnet_en/fintabnet.json --n_sample 16
-```
-
 ### Evaluation
 
 Run `./evaluation/qwen2vl_visual_evaluation.py` to evaluate the merged model's performance. The model generates HTML output that enables side-by-side comparison between the model's predictions and reference tables, making it easy to visually assess the accuracy of table structure recognition and content extraction through an interactive interface.
@@ -201,8 +185,6 @@ python ./evaluation/qwen2vl_visual_evaluation.py
 
 The model's performance is then evaluated using the [financial-statement-table-html](https://huggingface.co/datasets/apoidea/financial-statement-table-html) dataset, which provides standardized metrics for assessing table structure recognition and content extraction accuracy in financial statements.
 
-If you suffer from the torch.OutOfMemoryError, you can go to the step Quantization with AutoAWQ
-
 #### Step 1. Inference
 
 ```bash
@@ -213,10 +195,22 @@ python ./evaluation/inference.py --log-path ./logs --model-name qwen2_vl --model
 #### Step 2. Scoring
 
 ```bash
+pip install distance apted lxml
 python ./evaluation/calc_teds.py ./logs/$YOUR_TXT_PATH
 ```
 
 ## Hosting
+
+
+### [Optional] Quantization with AutoAWQ
+
+AutoAWQ is an easy-to-use package for 4-bit quantized models. AutoAWQ speeds up models by 3x and reduces memory requirements by 3x compared to FP16. AutoAWQ implements the Activation-aware Weight Quantization (AWQ) algorithm for quantizing LLMs.
+
+
+```bash
+pip install autoawq 
+CUDA_VISIBLE_DEVICES=0,1,2,3 python ./quantization/quant_awq.py --model_path ./models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en --quant_path ./models/qwen2_vl_7b_pissa_qlora_128_fintabnet_en_awq_int4 --jsonl_file ./data/fintabnet_en/fintabnet.json --n_sample 16
+```
 
 You can either host fine-tuned Qwen2 VL model on SageMaker real-time endpoint, or use directly vLLM docker on your perferred environment such as EKS. You can check the [deployment guidance here](https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory/tree/main/hosting_vllm)
 
