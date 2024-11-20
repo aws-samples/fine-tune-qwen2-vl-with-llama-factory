@@ -69,7 +69,7 @@ class Qwen2VL(nn.Module):
             generated_ids = self.model.generate(
                 **inputs,
                 max_new_tokens=max_new_tokens,
-                do_sample=do_sample,
+                #do_sample=do_sample,
                 repetition_penalty=repetition_penalty,
                 temperature=temperature)
 
@@ -77,7 +77,7 @@ class Qwen2VL(nn.Module):
             out_ids[len(in_ids):]
             for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
         ]
-        
+
         output_texts = self.processor.batch_decode(
             generated_ids_trimmed,
             skip_special_tokens=True,
