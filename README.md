@@ -121,7 +121,6 @@ clone the current repository and cd into repo
 ```
 git clone https://github.com/aws-samples/fine-tune-qwen2-vl-with-llama-factory.git
 cd fine-tune-qwen2-vl-with-llama-factory
-#pip install -r requirements.txt
 python ./preprocessing/process_fintabnet_en.py --output_dir ./data/fintabnet_en
 ```
 
