@@ -20,7 +20,7 @@ from typing import TYPE_CHECKING
 
 import fire
 from peft import LoraConfig, TaskType, get_peft_model
-from transformers import AutoProcessor, Qwen2VLForConditionalGeneration
+from transformers import AutoProcessor, Qwen2VLForConditionalGeneration, Qwen2_5_VLForConditionalGeneration
 
 if TYPE_CHECKING:
     from transformers import PreTrainedModel
@@ -43,8 +43,14 @@ def quantize_pissa(
 
     processor = AutoProcessor.from_pretrained(model_name_or_path,
                                               trust_remote_code=True)
-    model = Qwen2VLForConditionalGeneration.from_pretrained(
-        model_name_or_path, trust_remote_code=True, torch_dtype='auto')
+    if model_name_or_path == "Qwen/Qwen2-VL-7B-Instruct":
+        model = Qwen2VLForConditionalGeneration.from_pretrained(
+            model_name_or_path, trust_remote_code=True, torch_dtype='auto')
+    elif model_name_or_path == "Qwen/Qwen2.5-VL-7B-Instruct":
+        model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+            model_name_or_path, trust_remote_code=True, torch_dtype='auto')
+    else:
+        raise ValueError(f"Unsupported model: {model_name_or_path}")
 
     lora_config = LoraConfig(
         task_type=TaskType.CAUSAL_LM,
