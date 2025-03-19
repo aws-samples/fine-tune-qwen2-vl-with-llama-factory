@@ -6,6 +6,11 @@ This repository demonstrates the fine-tuning process of the multi-modal Qwen2-VL
 
 <img src="./evaluation/financial_table.png" width="41.5%"> <img src="./evaluation/financial_table_html.png" width="40%">
 
+#### Solution Architecture
+
+<img src="./hyperpod_architecture.png" width="82.5%"> 
+
+
 ## Cluster Creation
 
 You can follow the AWS workshop content with step by step guidance. 
