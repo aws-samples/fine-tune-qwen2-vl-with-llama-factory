@@ -15,13 +15,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import logging
 import os
 from typing import TYPE_CHECKING
 
 import fire
 from peft import LoraConfig, TaskType, get_peft_model
 from transformers import AutoProcessor, Qwen2VLForConditionalGeneration
-
 if TYPE_CHECKING:
     from transformers import PreTrainedModel
 
@@ -43,8 +43,16 @@ def quantize_pissa(
 
     processor = AutoProcessor.from_pretrained(model_name_or_path,
                                               trust_remote_code=True)
-    model = Qwen2VLForConditionalGeneration.from_pretrained(
-        model_name_or_path, trust_remote_code=True, torch_dtype='auto')
+    if "Qwen2.5" in model_name_or_path:
+        try:
+            from transformers import Qwen2_5_VLForConditionalGeneration
+        except ImportError:
+            raise ValueError("Qwen 2.5 VL is not installed. If you want to finetune Qwen 2.5 VL, please install transformers>4.49.0")
+        model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+            model_name_or_path, trust_remote_code=True, torch_dtype='auto')
+    else:
+        model = Qwen2VLForConditionalGeneration.from_pretrained(
+            model_name_or_path, trust_remote_code=True, torch_dtype='auto')
 
     lora_config = LoraConfig(
         task_type=TaskType.CAUSAL_LM,

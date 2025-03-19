@@ -117,6 +117,11 @@ git clone --depth 1 https://github.com/hiyouga/LLaMA-Factory.git
 cd LLaMA-Factory
 pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu121
 pip install -e ".[torch,metrics,deepspeed,bitsandbytes,liger-kernel]" "transformers>=0.45.0"
+# If you are finetuning Qwen2.5 VL, you might need to use transformers>4.49.0
+# see issue: https://github.com/huggingface/transformers/pull/36188
+# pip install git+https://github.com/huggingface/transformers@v4.49.0-SmolVLM-2
+# or
+# pip install git+https://github.com/huggingface/transformers@v4.49.0-SigLIP-2
 pip install flash-attn
 cd ..
 ```
