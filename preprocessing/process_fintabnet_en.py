@@ -103,7 +103,7 @@ if __name__ == '__main__':
                         help='Number of parallel processes to use')
     args = parser.parse_args()
 
-    ds_raw = load_dataset('eddtsoi/fintabnet-html',
+    ds_raw = load_dataset('apoidea/fintabnet-html',
                           'en',
                           num_proc=args.num_processes)
     ds = concatenate_datasets((ds_raw['train'], ds_raw['validation']))
