@@ -1,0 +1,9 @@
+
+
+
+
+locust -f locustfile_local.py --headless --run-time 2m -u 64 -r 64 --csv=results
+
+locust -f locustfile_sagemaker.py --headless --run-time 2m -u 64 -r 64 --csv=results
+
+locust -f locustfile_sagemaker.py --headless --run-time 2m -u 16 -r 16 --csv=results

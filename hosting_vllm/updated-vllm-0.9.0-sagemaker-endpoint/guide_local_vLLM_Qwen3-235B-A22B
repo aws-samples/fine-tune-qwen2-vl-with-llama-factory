@@ -1,0 +1,65 @@
+
+
+docker run --gpus all --shm-size=200g --memory=500g --memory-swap=-1 \
+  -p 8080:8080 \
+  -e HF_HOME=/home/ec2-user/SageMaker/cache/huggingface \
+  -v /home/ec2-user/SageMaker/cache/huggingface:/home/ec2-user/SageMaker/cache/huggingface \
+  -e SM_VLLM_MODEL=Qwen/Qwen3-235B-A22B \
+  -e SM_VLLM_TENSOR_PARALLEL_SIZE=8 \
+  -e SM_VLLM_MAX_MODEL_LEN=32768 \
+  -e SM_VLLM_MAX_NUM_SEQS=256 \
+  -e SM_VLLM_GPU_MEMORY_UTILIZATION=0.9 \
+  -e NCCL_DEBUG=INFO \
+  vllm_env:v0.9.0
+
+
+
+curl http://localhost:8080/v1/chat/completions -H "Content-Type: application/json" -d '{
+  "model": "Qwen/Qwen3-235B-A22B",
+  "messages": [
+    {"role": "user", "content": "Give me a short introduction to large language models."}
+  ],
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "top_k": 20,
+  "max_tokens": 8192,
+  "presence_penalty": 1.5,
+  "chat_template_kwargs": {"enable_thinking": false}
+}'
+
+curl http://localhost:8080/v1/chat/completions -H "Content-Type: application/json" -d '{
+  "model": "Qwen/Qwen3-235B-A22B",
+  "messages": [
+    {"role": "user", "content": "Give me a short introduction to large language models."}
+  ],
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "top_k": 20,
+  "max_tokens": 8192,
+  "presence_penalty": 1.5,
+  "chat_template_kwargs": {"enable_thinking": true}
+}'
+
+curl http://localhost:8080/v1/chat/completions -H "Content-Type: application/json" -d '{
+  "model": "Qwen/Qwen3-235B-A22B",
+  "messages": [
+    {"role": "user", "content": "Hi, who are you."}
+  ],
+  "temperature": 0.7,
+  "top_p": 0.8,
+  "top_k": 20,
+  "max_tokens": 8192,
+  "presence_penalty": 1.5,
+  "chat_template_kwargs": {"enable_thinking": false}
+}'
+
+Streaming 
+curl -N http://localhost:8080/v1/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "Qwen/Qwen3-235B-A22B",
+    "prompt": "Once upon a time in a galaxy far, far away",
+    "max_tokens": 100,
+    "stream": true
+  }'
+
