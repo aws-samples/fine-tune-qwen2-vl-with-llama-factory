@@ -69,7 +69,7 @@ aws sagemaker delete-cluster --cluster-name ${my-cluster-name}
 - Ensure proper AWS CLI permissions and configurations. 
 - Validate the cluster configuration files before lauching the cluster
 ```
-curl -O https://raw.githubusercontent.com/aws-samples/awsome-distributed-training/main/1.architectures/5.sagemaker-hyperpod/validate-config.py
+curl -O https://raw.githubusercontent.com/awslabs/awsome-distributed-ai/main/architectures/sagemaker-hyperpod-slurm/validate-config.py
 
 pip3 install boto3
 python3 validate-config.py --cluster-config cluster-config.json --provisioning-parameters provisioning_parameters.json
